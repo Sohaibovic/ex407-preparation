@@ -7,7 +7,7 @@
 
 ## Objectives
 
-* Understand core components of Ansible
+* [Understand core components of Ansible](https://github.com/widansible/ex407-preparation/blob/master/00-core.md)
 
   * Inventories
   * Modules

@@ -1,6 +1,6 @@
-## Core components of ansible
+# Core components of ansible
 
-* inventories
+## inventories
 
 inventory is a list (or group of lists) of managed nodes (or hosts).
 
