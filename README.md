@@ -1,11 +1,11 @@
 # RedHat Ansible Exam EX407
 
-Persiapan:
+## Persiapan
 
 * Read basic ansible from docs.ansible.com
 * Praktek
 
-Objectives:
+## Objectives
 
 * Understand core components of Ansible
 
@@ -61,7 +61,8 @@ Objectives:
 * Use Ansible Vault in playbooks to protect sensitive data
 * Use provided documentation to look up specific information about Ansible modules and commands
 
-Ref:
+## Referensi
+
 * https://www.redhat.com/en/services/training/ex407-red-hat-certified-specialist-in-ansible-automation-exam
 * https://docs.ansible.com/
 
