@@ -17,7 +17,7 @@
   * Playbooks
   * Configuration files
 
-* Install and configure an Ansible control node
+* [Install and configure an Ansible control node](https://github.com/widansible/ex407-preparation/blob/master/01-install.md)
 
   * Install required packages
   * Create a static host inventory file

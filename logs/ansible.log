@@ -1,0 +1,90 @@
+2020-01-09 19:16:35,134 p=wid u=1715 | ERROR! the playbook: log could not be found
+2020-01-09 19:16:37,375 p=wid u=1721 | PLAY [ansible logrotate] ****************************************************************
+2020-01-09 19:16:37,385 p=wid u=1721 | TASK [Gathering Facts] ******************************************************************
+2020-01-09 19:16:37,466 p=wid u=1721 | fatal: [localhost]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added 'localhost' (ECDSA) to the list of known hosts.\r\nPermission denied (publickey,password).", "unreachable": true}
+2020-01-09 19:16:37,468 p=wid u=1721 | PLAY RECAP ******************************************************************************
+2020-01-09 19:16:37,468 p=wid u=1721 | localhost                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2020-01-09 19:16:52,514 p=wid u=1733 | ERROR! the playbook: , could not be found
+2020-01-09 19:16:59,434 p=wid u=1735 | PLAY [ansible logrotate] ****************************************************************
+2020-01-09 19:16:59,439 p=wid u=1735 | TASK [Gathering Facts] ******************************************************************
+2020-01-09 19:16:59,888 p=wid u=1735 | fatal: [localhost]: FAILED! => {"ansible_facts": {}, "changed": false, "failed_modules": {"setup": {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python"}, "deprecations": [{"msg": "Distribution Ubuntu 16.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for more information", "version": "2.12"}], "failed": true, "module_stderr": "sudo: a password is required\n", "module_stdout": "", "msg": "MODULE FAILURE\nSee stdout/stderr for the exact error", "rc": 1}}, "msg": "The following modules failed to execute: setup\n"}
+2020-01-09 19:16:59,891 p=wid u=1735 | PLAY RECAP ******************************************************************************
+2020-01-09 19:16:59,891 p=wid u=1735 | localhost                  : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2020-01-09 19:17:27,329 p=wid u=1780 | PLAY [ansible logrotate] ****************************************************************
+2020-01-09 19:17:27,335 p=wid u=1780 | TASK [Gathering Facts] ******************************************************************
+2020-01-09 19:17:27,671 p=wid u=1780 | fatal: [localhost]: FAILED! => {"ansible_facts": {}, "changed": false, "failed_modules": {"setup": {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python"}, "deprecations": [{"msg": "Distribution Ubuntu 16.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for more information", "version": "2.12"}], "failed": true, "module_stderr": "sudo: a password is required\n", "module_stdout": "", "msg": "MODULE FAILURE\nSee stdout/stderr for the exact error", "rc": 1}}, "msg": "The following modules failed to execute: setup\n"}
+2020-01-09 19:17:27,672 p=wid u=1780 | PLAY RECAP ******************************************************************************
+2020-01-09 19:17:27,672 p=wid u=1780 | localhost                  : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2020-01-09 19:18:07,567 p=wid u=1840 | PLAY [ansible logrotate] ****************************************************************
+2020-01-09 19:18:07,573 p=wid u=1840 | TASK [Gathering Facts] ******************************************************************
+2020-01-09 19:18:07,904 p=wid u=1840 | fatal: [localhost]: FAILED! => {"ansible_facts": {}, "changed": false, "failed_modules": {"setup": {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python"}, "deprecations": [{"msg": "Distribution Ubuntu 16.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for more information", "version": "2.12"}], "failed": true, "module_stderr": "sudo: a password is required\n", "module_stdout": "", "msg": "MODULE FAILURE\nSee stdout/stderr for the exact error", "rc": 1}}, "msg": "The following modules failed to execute: setup\n"}
+2020-01-09 19:18:07,907 p=wid u=1840 | PLAY RECAP ******************************************************************************
+2020-01-09 19:18:07,907 p=wid u=1840 | localhost                  : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2020-01-09 19:18:28,728 p=wid u=1880 | [WARNING]: Unable to parse /data/ansible/ex407-preparation/localhost as an inventory
+source
+
+2020-01-09 19:18:28,728 p=wid u=1880 | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2020-01-09 19:18:28,729 p=wid u=1880 | [WARNING]: provided hosts list is empty, only localhost is available. Note that the
+implicit localhost does not match 'all'
+
+2020-01-09 19:18:28,855 p=wid u=1880 | PLAY [ansible logrotate] ****************************************************************
+2020-01-09 19:18:28,856 p=wid u=1880 | skipping: no hosts matched
+2020-01-09 19:18:28,856 p=wid u=1880 | PLAY RECAP ******************************************************************************
+2020-01-09 19:19:17,494 p=wid u=1893 | PLAY [ansible logrotate] ****************************************************************
+2020-01-09 19:19:17,500 p=wid u=1893 | TASK [Gathering Facts] ******************************************************************
+2020-01-09 19:19:17,860 p=wid u=1893 | fatal: [localhost]: FAILED! => {"ansible_facts": {}, "changed": false, "failed_modules": {"setup": {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python"}, "deprecations": [{"msg": "Distribution Ubuntu 16.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for more information", "version": "2.12"}], "failed": true, "module_stderr": "sudo: a password is required\n", "module_stdout": "", "msg": "MODULE FAILURE\nSee stdout/stderr for the exact error", "rc": 1}}, "msg": "The following modules failed to execute: setup\n"}
+2020-01-09 19:19:17,862 p=wid u=1893 | PLAY RECAP ******************************************************************************
+2020-01-09 19:19:17,862 p=wid u=1893 | localhost                  : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2020-01-09 19:19:38,958 p=wid u=1933 | PLAY [ansible logrotate] ****************************************************************
+2020-01-09 19:19:38,964 p=wid u=1933 | TASK [Gathering Facts] ******************************************************************
+2020-01-09 19:19:39,300 p=wid u=1933 | fatal: [localhost]: FAILED! => {"ansible_facts": {}, "changed": false, "failed_modules": {"setup": {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python"}, "deprecations": [{"msg": "Distribution Ubuntu 16.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for more information", "version": "2.12"}], "failed": true, "module_stderr": "sudo: a password is required\n", "module_stdout": "", "msg": "MODULE FAILURE\nSee stdout/stderr for the exact error", "rc": 1}}, "msg": "The following modules failed to execute: setup\n"}
+2020-01-09 19:19:39,301 p=wid u=1933 | PLAY RECAP ******************************************************************************
+2020-01-09 19:19:39,301 p=wid u=1933 | localhost                  : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2020-01-09 19:20:06,059 p=wid u=1989 | PLAY [ansible logrotate] ****************************************************************
+2020-01-09 19:20:06,065 p=wid u=1989 | TASK [nickhammond.logrotate : nickhammond.logrotate | Install logrotate] ****************
+2020-01-09 19:20:06,420 p=wid u=1989 | fatal: [localhost]: FAILED! => {"changed": false, "msg": "Could not detect which package manager to use. Try gathering facts or setting the \"use\" option."}
+2020-01-09 19:20:06,421 p=wid u=1989 | PLAY RECAP ******************************************************************************
+2020-01-09 19:20:06,421 p=wid u=1989 | localhost                  : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2020-01-09 19:20:33,968 p=wid u=2069 | PLAY [ansible logrotate] ****************************************************************
+2020-01-09 19:20:33,975 p=wid u=2069 | TASK [nickhammond.logrotate : nickhammond.logrotate | Install logrotate] ****************
+2020-01-09 19:20:34,236 p=wid u=2069 | [DEPRECATION WARNING]: Distribution Ubuntu 16.04 on host localhost should use 
+/usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior 
+Ansible releases. A future Ansible release will default to using the discovered platform
+ python for this host. See 
+https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for
+ more information. This feature will be removed in version 2.12. Deprecation warnings 
+can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2020-01-09 19:20:34,237 p=wid u=2069 | fatal: [localhost]: FAILED! => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python"}, "changed": false, "module_stderr": "sudo: a password is required\n", "module_stdout": "", "msg": "MODULE FAILURE\nSee stdout/stderr for the exact error", "rc": 1}
+2020-01-09 19:20:34,238 p=wid u=2069 | PLAY RECAP ******************************************************************************
+2020-01-09 19:20:34,239 p=wid u=2069 | localhost                  : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2020-01-09 19:22:19,739 p=wid u=2135 | PLAY [ansible logrotate] ****************************************************************
+2020-01-09 19:22:19,746 p=wid u=2135 | TASK [nickhammond.logrotate : nickhammond.logrotate | Install logrotate] ****************
+2020-01-09 19:22:25,346 p=wid u=2135 | [WARNING]: Updating cache and auto-installing missing dependency: python-apt
+
+2020-01-09 19:22:25,350 p=wid u=2135 | [DEPRECATION WARNING]: Distribution Ubuntu 16.04 on host localhost should use 
+/usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior 
+Ansible releases. A future Ansible release will default to using the discovered platform
+ python for this host. See 
+https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for
+ more information. This feature will be removed in version 2.12. Deprecation warnings 
+can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2020-01-09 19:22:25,350 p=wid u=2135 | ok: [localhost]
+2020-01-09 19:22:25,353 p=wid u=2135 | TASK [nickhammond.logrotate : nickhammond.logrotate | Setup logrotate.d scripts] ********
+2020-01-09 19:22:25,793 p=wid u=2135 | changed: [localhost] => (item={u'path': u'/data/ansible/ex407-preparation/logs/ansible.log', u'name': u'ansible', u'options': [u'daily', u'size 9M', u'missingok', u'compress', u'delaycompress', u'copytruncate']})
+2020-01-09 19:22:25,797 p=wid u=2135 | PLAY RECAP ******************************************************************************
+2020-01-09 19:22:25,798 p=wid u=2135 | localhost                  : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-01-09 19:23:15,424 p=wid u=2508 | PLAY [ansible logrotate] ****************************************************************
+2020-01-09 19:23:15,430 p=wid u=2508 | TASK [nickhammond.logrotate : nickhammond.logrotate | Install logrotate] ****************
+2020-01-09 19:23:17,013 p=wid u=2508 | [DEPRECATION WARNING]: Distribution Ubuntu 16.04 on host localhost should use 
+/usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior 
+Ansible releases. A future Ansible release will default to using the discovered platform
+ python for this host. See 
+https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for
+ more information. This feature will be removed in version 2.12. Deprecation warnings 
+can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2020-01-09 19:23:17,014 p=wid u=2508 | ok: [localhost]
+2020-01-09 19:23:17,019 p=wid u=2508 | TASK [nickhammond.logrotate : nickhammond.logrotate | Setup logrotate.d scripts] ********
+2020-01-09 19:23:17,501 p=wid u=2508 | changed: [localhost] => (item={u'path': u'/data/ansible/ex407-preparation/logs/ansible.log', u'name': u'ansible', u'options': [u'daily', u'size 9M', u'missingok', u'compress', u'delaycompress', u'copytruncate']})
+2020-01-09 19:23:17,503 p=wid u=2508 | PLAY RECAP ******************************************************************************
+2020-01-09 19:23:17,503 p=wid u=2508 | localhost                  : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   

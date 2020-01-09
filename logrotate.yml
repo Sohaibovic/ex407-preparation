@@ -1,0 +1,19 @@
+- name: ansible logrotate
+  hosts: all
+  become: yes
+  gather_facts: no
+
+  vars:
+   logrotate_scripts:
+    - name: ansible
+      path: "/data/ansible/ex407-preparation/logs/ansible.log"
+      options:
+       - daily
+       - size 9M
+       - missingok
+       - compress
+       - delaycompress
+       - copytruncate
+
+  roles:
+   - nickhammond.logrotate

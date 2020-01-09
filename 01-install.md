@@ -41,6 +41,50 @@ ansible-doc lineinfile
 ansible localhost -m lineinfile -a "path=./inventory/hosts line='localhost connection=local' create=yes state=present"
 ```
 
+## * create a configuration file
+```
+cat <<EOL> ansible.cfg
+[defaults]
+inventory      = /data/ansible/ex407-preparation/inventory/hosts
+roles_path    = /data/ansible/ex407-preparation/roles
+forks          = 9
+host_key_checking = False
+remote_user = ansible
+log_path = /data/ansible/ex407-preparation/logs/ansible.log
+EOL
+```
+karena menggunakan log, maka log harus di rotate, maka install roles logrotate dari galaxy
+```
+mkdir roles
+ansible-galaxy install nickhammond.logrotate -p roles/
+```
+lalu buat playbook logrotate.yml yang berisi (sesuai dengan variable config)
+```
+- name: ansible logrotate
+  hosts: all
+  become: yes
+  gather_facts: no
+
+  vars:
+   logrotate_scripts:
+    - name: ansible
+      path: "/data/ansible/ex407-preparation/logs/ansible.log"
+      options:
+       - daily
+       - size 9M
+       - missingok
+       - compress
+       - delaycompress
+       - copytruncate
+
+  roles:
+   - nickhammond.logrotate
+```
+dan jalankan dengan
+```
+ansible-playbook -i localhost, logrotate.yml -c local -u wid
+```
+
 ### Referensi
 * https://releases.ansible.com/ansible/rpm/release/epel-7-x86_64/
 

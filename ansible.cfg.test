@@ -1,0 +1,7 @@
+[default]
+inventory = inventory
+roles_path = roles/
+host_key_checking = false
+remote_user = ansible
+forks = 9
+
