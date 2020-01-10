@@ -88,3 +88,139 @@ can be disabled by setting deprecation_warnings=False in ansible.cfg.
 2020-01-09 19:23:17,501 p=wid u=2508 | changed: [localhost] => (item={u'path': u'/data/ansible/ex407-preparation/logs/ansible.log', u'name': u'ansible', u'options': [u'daily', u'size 9M', u'missingok', u'compress', u'delaycompress', u'copytruncate']})
 2020-01-09 19:23:17,503 p=wid u=2508 | PLAY RECAP ******************************************************************************
 2020-01-09 19:23:17,503 p=wid u=2508 | localhost                  : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-01-09 19:35:34,499 p=wid u=2776 | # /data/ansible/ex407-preparation/roles
+2020-01-09 19:35:34,502 p=wid u=2776 | - nickhammond.logrotate, master
+2020-01-09 19:37:15,597 p=wid u=2810 | No roles match your search.
+2020-01-10 01:07:25,049 p=wid u=4436 | localhost | FAILED! => {
+    "changed": false, 
+    "msg": "useradd: Permission denied.\nuseradd: cannot lock /etc/passwd; try again later.\n", 
+    "name": "ansible", 
+    "rc": 1
+}
+2020-01-10 01:07:30,143 p=wid u=4470 | localhost | FAILED! => {
+    "changed": false, 
+    "msg": "useradd: Permission denied.\nuseradd: cannot lock /etc/passwd; try again later.\n", 
+    "name": "ansible", 
+    "rc": 1
+}
+2020-01-10 01:07:35,810 p=wid u=4502 | localhost | FAILED! => {
+    "changed": false, 
+    "msg": "useradd: Permission denied.\nuseradd: cannot lock /etc/passwd; try again later.\n", 
+    "name": "ansible", 
+    "rc": 1
+}
+2020-01-10 01:07:50,075 p=wid u=4547 | localhost | FAILED! => {
+    "changed": false, 
+    "msg": "useradd: Permission denied.\nuseradd: cannot lock /etc/passwd; try again later.\n", 
+    "name": "ansible", 
+    "rc": 1
+}
+2020-01-10 01:08:12,307 p=wid u=4582 | localhost | CHANGED => {
+    "changed": true, 
+    "comment": "", 
+    "create_home": true, 
+    "group": 1003, 
+    "home": "/home/ansible", 
+    "name": "ansible", 
+    "shell": "", 
+    "state": "present", 
+    "system": false, 
+    "uid": 1003
+}
+2020-01-10 01:11:48,991 p=wid u=4645 | localhost | FAILED! => {
+    "msg": "template error while templating string: expected token 'end of print statement', got 'up'. String: {{ look\nup('file', '~/.ssh/id_rsa.pub') }}"
+}
+2020-01-10 01:12:01,362 p=wid u=4653 | An exception occurred during task execution. To see the full traceback, use -vvv. The error was: OSError: [Errno 13] Permission denied: '/home/ansible/.ssh'
+2020-01-10 01:12:01,364 p=wid u=4653 | localhost | FAILED! => {
+    "changed": false, 
+    "module_stderr": "Traceback (most recent call last):\n  File \"/home/wid/.ansible/tmp/ansible-tmp-1578593521.1-193707551905725/AnsiballZ_authorized_key.py\", line 102, in <module>\n    _ansiballz_main()\n  File \"/home/wid/.ansible/tmp/ansible-tmp-1578593521.1-193707551905725/AnsiballZ_authorized_key.py\", line 94, in _ansiballz_main\n    invoke_module(zipped_mod, temp_path, ANSIBALLZ_PARAMS)\n  File \"/home/wid/.ansible/tmp/ansible-tmp-1578593521.1-193707551905725/AnsiballZ_authorized_key.py\", line 40, in invoke_module\n    runpy.run_module(mod_name='ansible.modules.system.authorized_key', init_globals=None, run_name='__main__', alter_sys=True)\n  File \"/usr/lib/python2.7/runpy.py\", line 188, in run_module\n    fname, loader, pkg_name)\n  File \"/usr/lib/python2.7/runpy.py\", line 82, in _run_module_code\n    mod_name, mod_fname, mod_loader, pkg_name)\n  File \"/usr/lib/python2.7/runpy.py\", line 72, in _run_code\n    exec code in run_globals\n  File \"/tmp/ansible_authorized_key_payload_GAdAip/ansible_authorized_key_payload.zip/ansible/modules/system/authorized_key.py\", line 682, in <module>\n  File \"/tmp/ansible_authorized_key_payload_GAdAip/ansible_authorized_key_payload.zip/ansible/modules/system/authorized_key.py\", line 677, in main\n  File \"/tmp/ansible_authorized_key_payload_GAdAip/ansible_authorized_key_payload.zip/ansible/modules/system/authorized_key.py\", line 636, in enforce_state\n  File \"/tmp/ansible_authorized_key_payload_GAdAip/ansible_authorized_key_payload.zip/ansible/modules/system/authorized_key.py\", line 344, in keyfile\nOSError: [Errno 13] Permission denied: '/home/ansible/.ssh'\n", 
+    "module_stdout": "", 
+    "msg": "MODULE FAILURE\nSee stdout/stderr for the exact error", 
+    "rc": 1
+}
+2020-01-10 01:12:17,592 p=wid u=4683 | An exception occurred during task execution. To see the full traceback, use -vvv. The error was: OSError: [Errno 13] Permission denied: '/home/ansible/.ssh'
+2020-01-10 01:12:17,594 p=wid u=4683 | localhost | FAILED! => {
+    "changed": false, 
+    "module_stderr": "Traceback (most recent call last):\n  File \"/home/wid/.ansible/tmp/ansible-tmp-1578593537.32-31019131991325/AnsiballZ_authorized_key.py\", line 102, in <module>\n    _ansiballz_main()\n  File \"/home/wid/.ansible/tmp/ansible-tmp-1578593537.32-31019131991325/AnsiballZ_authorized_key.py\", line 94, in _ansiballz_main\n    invoke_module(zipped_mod, temp_path, ANSIBALLZ_PARAMS)\n  File \"/home/wid/.ansible/tmp/ansible-tmp-1578593537.32-31019131991325/AnsiballZ_authorized_key.py\", line 40, in invoke_module\n    runpy.run_module(mod_name='ansible.modules.system.authorized_key', init_globals=None, run_name='__main__', alter_sys=True)\n  File \"/usr/lib/python2.7/runpy.py\", line 188, in run_module\n    fname, loader, pkg_name)\n  File \"/usr/lib/python2.7/runpy.py\", line 82, in _run_module_code\n    mod_name, mod_fname, mod_loader, pkg_name)\n  File \"/usr/lib/python2.7/runpy.py\", line 72, in _run_code\n    exec code in run_globals\n  File \"/tmp/ansible_authorized_key_payload_nueSja/ansible_authorized_key_payload.zip/ansible/modules/system/authorized_key.py\", line 682, in <module>\n  File \"/tmp/ansible_authorized_key_payload_nueSja/ansible_authorized_key_payload.zip/ansible/modules/system/authorized_key.py\", line 677, in main\n  File \"/tmp/ansible_authorized_key_payload_nueSja/ansible_authorized_key_payload.zip/ansible/modules/system/authorized_key.py\", line 636, in enforce_state\n  File \"/tmp/ansible_authorized_key_payload_nueSja/ansible_authorized_key_payload.zip/ansible/modules/system/authorized_key.py\", line 344, in keyfile\nOSError: [Errno 13] Permission denied: '/home/ansible/.ssh'\n", 
+    "module_stdout": "", 
+    "msg": "MODULE FAILURE\nSee stdout/stderr for the exact error", 
+    "rc": 1
+}
+2020-01-10 01:12:55,735 p=wid u=4712 | An exception occurred during task execution. To see the full traceback, use -vvv. The error was: OSError: [Errno 1] Operation not permitted: '/home/widya/.ssh'
+2020-01-10 01:12:55,736 p=wid u=4712 | localhost | FAILED! => {
+    "changed": false, 
+    "module_stderr": "Traceback (most recent call last):\n  File \"/home/wid/.ansible/tmp/ansible-tmp-1578593575.47-46880681111913/AnsiballZ_authorized_key.py\", line 102, in <module>\n    _ansiballz_main()\n  File \"/home/wid/.ansible/tmp/ansible-tmp-1578593575.47-46880681111913/AnsiballZ_authorized_key.py\", line 94, in _ansiballz_main\n    invoke_module(zipped_mod, temp_path, ANSIBALLZ_PARAMS)\n  File \"/home/wid/.ansible/tmp/ansible-tmp-1578593575.47-46880681111913/AnsiballZ_authorized_key.py\", line 40, in invoke_module\n    runpy.run_module(mod_name='ansible.modules.system.authorized_key', init_globals=None, run_name='__main__', alter_sys=True)\n  File \"/usr/lib/python2.7/runpy.py\", line 188, in run_module\n    fname, loader, pkg_name)\n  File \"/usr/lib/python2.7/runpy.py\", line 82, in _run_module_code\n    mod_name, mod_fname, mod_loader, pkg_name)\n  File \"/usr/lib/python2.7/runpy.py\", line 72, in _run_code\n    exec code in run_globals\n  File \"/tmp/ansible_authorized_key_payload_pfXCV0/ansible_authorized_key_payload.zip/ansible/modules/system/authorized_key.py\", line 682, in <module>\n  File \"/tmp/ansible_authorized_key_payload_pfXCV0/ansible_authorized_key_payload.zip/ansible/modules/system/authorized_key.py\", line 677, in main\n  File \"/tmp/ansible_authorized_key_payload_pfXCV0/ansible_authorized_key_payload.zip/ansible/modules/system/authorized_key.py\", line 636, in enforce_state\n  File \"/tmp/ansible_authorized_key_payload_pfXCV0/ansible_authorized_key_payload.zip/ansible/modules/system/authorized_key.py\", line 347, in keyfile\nOSError: [Errno 1] Operation not permitted: '/home/widya/.ssh'\n", 
+    "module_stdout": "", 
+    "msg": "MODULE FAILURE\nSee stdout/stderr for the exact error", 
+    "rc": 1
+}
+2020-01-10 01:13:06,238 p=wid u=4741 | localhost | CHANGED => {
+    "changed": true, 
+    "comment": null, 
+    "exclusive": false, 
+    "follow": false, 
+    "key": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDJnGEpPYO5pwzR4ITZ/6iv1Uyef9belISPsXBBJcM3THnLfBKb33GcizFmL40+D5Tyr513ISB9ahmAnQaKF/iIkK4YChcoRLqc/CbiVM3jtqpVa1Ye1R8zpzcwi4WtVEpZKnnP/koLvxynHkVWQtI7VCeeXasPFCyi4Jt3mavutsV3gYdgp+ZAgRg+rQ8RsBGfpnRSLF088eg/cYJxRy20v4nRnTuxxigRfLJUSs1tg5mEvmt2kIb1rJ1xqkw21uS1NsHpuK6rT4kr5Zb3znOi1xCWzR9RbrkxtTq27K3cZ9h+fELkJ8yP+SQHIi59+P+iMPxfb6G+546szQdNBae9ildnxbYEW5MEkSuyvWP9sJdG1veukXqwWCvWI4nQPfD3HoUIj2wL116zLdrDTAPtaPyDG2h1RMDi6yzVgtMgmS8UJIN8TWENSEjIFTz0dOQINnd2uARNsI04DRZuki60YVnBfeRjEWyEXsgH6w/IOzc4rUoGm5sQMww1fnYZxmM7Gtfzr5rKH1UDzpok0eqmf6VGVayDGG4PxweI3DhVEvTduNRNv5Cn3IJ832Es346CHNnhdneRubz3HIvfENCslPcsbsyjJxWv4HcQ/JfHIMnV2YQsSNUAZsAuGDkLKl58vGTHpV+K0rbi0+0D+soyh8Tgj88P9yX7L1mu3Su/pQ== wid@ubuntu", 
+    "key_options": null, 
+    "keyfile": "/home/widya/.ssh/authorized_keys", 
+    "manage_dir": true, 
+    "path": null, 
+    "state": "present", 
+    "user": "widya", 
+    "validate_certs": true
+}
+2020-01-10 01:19:06,173 p=wid u=4808 | localhost | CHANGED | rc=0 >>
+/etc/shadow
+
+2020-01-10 01:19:22,644 p=wid u=4844 | localhost | FAILED | rc=1 >>
+cat: /etc/shadow: Permission deniednon-zero return code
+
+2020-01-10 01:19:27,302 p=wid u=4874 | localhost | CHANGED | rc=0 >>
+root:$6$KOxaksrL$UpHmwjlTG2tjTvwZKNrCxf2uDGxFuTiA7tVkXNkxzjQ7Y23YnH4JlWKz5vjrK5GcW.XbOPiRs5RC9Cw9TmKdq0:18270:0:99999:7:::
+daemon:*:17953:0:99999:7:::
+bin:*:17953:0:99999:7:::
+sys:*:17953:0:99999:7:::
+sync:*:17953:0:99999:7:::
+games:*:17953:0:99999:7:::
+man:*:17953:0:99999:7:::
+lp:*:17953:0:99999:7:::
+mail:*:17953:0:99999:7:::
+news:*:17953:0:99999:7:::
+uucp:*:17953:0:99999:7:::
+proxy:*:17953:0:99999:7:::
+www-data:*:17953:0:99999:7:::
+backup:*:17953:0:99999:7:::
+list:*:17953:0:99999:7:::
+irc:*:17953:0:99999:7:::
+gnats:*:17953:0:99999:7:::
+nobody:*:17953:0:99999:7:::
+systemd-timesync:*:17953:0:99999:7:::
+systemd-network:*:17953:0:99999:7:::
+systemd-resolve:*:17953:0:99999:7:::
+systemd-bus-proxy:*:17953:0:99999:7:::
+syslog:*:17953:0:99999:7:::
+_apt:*:17953:0:99999:7:::
+messagebus:*:18270:0:99999:7:::
+uuidd:*:18270:0:99999:7:::
+sshd:*:18270:0:99999:7:::
+widysible:$6$CfjrLvwGbzSPGq49$t./6zxk9D16P6J/nq2eBVWQ74aGgzKDr:18270:0:99999:7:::
+colord:*:18270:0:99999:7:::
+widya:$6$iWapfpVD$05fx.DHA/Um38BCudzsthEuEnWVeT3zSmsASJZx3xC8qFOhMyApffG2gYNt5B6bUhES/CIoIeesXLPAEoghps/:18270:0:99999:7:::
+wid:$6$woh1Ol95$/pVLhlzxH1nzWVITBMlboJ12I/EXpzNpkbp3im8a.0nvRdDjJa2ZuRGIlvzoQWbR9cvW4GTCWKkKC60StYM2b1:18270:0:99999:7:::
+ansible:!:18270:0:99999:7:::
+
+2020-01-10 01:24:51,271 p=wid u=4933 | localhost | FAILED! => {
+    "msg": "The task includes an option with an undefined variable. The error was: 'ansible_hostname' is undefined"
+}
+2020-01-10 01:25:57,230 p=wid u=4947 | localhost | FAILED! => {
+    "msg": "The task includes an option with an undefined variable. The error was: 'ansible_hostname' is undefined"
+}
+2020-01-10 01:26:08,171 p=wid u=4958 | localhost | FAILED! => {
+    "changed": false, 
+    "msg": "Destination /etc/motd does not exist !", 
+    "rc": 257
+}
+2020-01-10 01:26:39,849 p=wid u=4991 | localhost | CHANGED => {
+    "backup": "", 
+    "changed": true, 
+    "msg": "line added"
+}

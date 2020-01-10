@@ -56,6 +56,7 @@ EOL
 karena menggunakan log, maka log harus di rotate, maka install roles logrotate dari galaxy
 ```
 mkdir roles
+ansible-galaxy role search logrotate
 ansible-galaxy install nickhammond.logrotate -p roles/
 ```
 lalu buat playbook logrotate.yml yang berisi (sesuai dengan variable config)
@@ -82,7 +83,7 @@ lalu buat playbook logrotate.yml yang berisi (sesuai dengan variable config)
 ```
 dan jalankan dengan
 ```
-ansible-playbook -i localhost, logrotate.yml -c local -u wid
+ansible-playbook -i localhost, 01-logrotate.yml -c local -u wid
 ```
 
 ### Referensi

@@ -2,8 +2,9 @@
 
 ## Persiapan
 
-* Read basic ansible from docs.ansible.com
+* Read basic ansible from https://docs.ansible.com
 * Praktek
+* Praktek lebih dalam dari hasil https://github.com/search?o=desc&q=ex407&s=updated&type=Repositories
 
 ## Objectives
 
@@ -65,4 +66,5 @@
 
 * https://www.redhat.com/en/services/training/ex407-red-hat-certified-specialist-in-ansible-automation-exam
 * https://docs.ansible.com/
+* https://www.tecmint.com/understand-core-components-of-ansible/
 
