@@ -24,5 +24,15 @@ ansible-doc file
 ls files && cat files/file1.txt
 ```
 
+```
+ansible localhost -m setup | grep mount
+df -Th /
+ansible-playbook -i localhost, 06-retrieve-var.yml -c local
+ansible-playbook -i localhost, 06-condition.yml -c local
+```
+
 ## * Use variables to retrieve the results of running commands
+
+## Referensi
+* https://github.com/splunk-elk-admin/ex407-ansible/blob/master/a.txt
 

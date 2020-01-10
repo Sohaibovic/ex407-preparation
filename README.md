@@ -32,13 +32,16 @@
   *  Validate a working configuration using ad-hoc Ansible commands
 
 * [Create simple shell scripts that run ad hoc Ansible commands](https://github.com/widansible/ex407-preparation/blob/master/03-ansible-adhoc-command.sh)
-* [Use both static and dynamic inventories to define groups of hosts](https://github.com/widansible/ex407-preparation/blob/master/04-static-dynamic-inventory.md)
-* [Utilize an existing dynamic inventory script](https://github.com/widansible/ex407-preparation/blob/master/05-utilize-dynamic-inventory-script.md)
-* Create Ansible plays and playbooks
 
-  *  Know how to work with commonly used Ansible modules
-  *  Use variables to retrieve the results of running commands
-  *  Use conditionals to control play execution
+* [Use both static and dynamic inventories to define groups of hosts](https://github.com/widansible/ex407-preparation/blob/master/04-static-dynamic-inventory.md)
+
+* [Utilize an existing dynamic inventory script](https://github.com/widansible/ex407-preparation/blob/master/05-utilize-dynamic-inventory-script.md)
+
+* [Create Ansible plays and playbooks](https://github.com/widansible/ex407-preparation/blob/master/06-create-playbook.md)
+
+  *  [Know how to work with commonly used Ansible modules](https://github.com/widansible/ex407-preparation/blob/master/06-common-ansible-modules.yml)
+  *  [Use variables to retrieve the results of running commands](https://github.com/widansible/ex407-preparation/blob/master/06-retrieve-var.yml)
+  *  [Use conditionals to control play execution](https://github.com/widansible/ex407-preparation/blob/master/06-condition.yml)
   *  Configure error handling
   *  Create playbooks to configure systems to a specified state
 
