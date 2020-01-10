@@ -32,8 +32,8 @@
   *  Validate a working configuration using ad-hoc Ansible commands
 
 * [Create simple shell scripts that run ad hoc Ansible commands](https://github.com/widansible/ex407-preparation/blob/master/03-ansible-adhoc-command.sh)
-* Use both static and dynamic inventories to define groups of hosts
-* Utilize an existing dynamic inventory script
+* [Use both static and dynamic inventories to define groups of hosts](https://github.com/widansible/ex407-preparation/blob/master/04-static-dynamic-inventory.md)
+* [Utilize an existing dynamic inventory script](https://github.com/widansible/ex407-preparation/blob/master/05-utilize-dynamic-inventory-script.md)
 * Create Ansible plays and playbooks
 
   *  Know how to work with commonly used Ansible modules
