@@ -224,3 +224,480 @@ ansible:!:18270:0:99999:7:::
     "changed": true, 
     "msg": "line added"
 }
+2020-01-10 11:15:44,878 p=wid u=15357 | [DEPRECATION WARNING]: The TRANSFORM_INVALID_GROUP_CHARS settings is set to allow bad 
+characters in group names by default, this will change, but still be user configurable 
+on deprecation. This feature will be removed in version 2.10. Deprecation warnings can 
+be disabled by setting deprecation_warnings=False in ansible.cfg.
+2020-01-10 11:15:44,878 p=wid u=15357 | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to
+see details
+
+2020-01-10 11:15:44,886 p=wid u=15357 |   hosts (5):
+2020-01-10 11:15:44,886 p=wid u=15357 |     widf1
+2020-01-10 11:15:44,886 p=wid u=15357 |     c7213
+2020-01-10 11:15:44,886 p=wid u=15357 |     c7214
+2020-01-10 11:15:44,886 p=wid u=15357 |     u16223
+2020-01-10 11:15:44,886 p=wid u=15357 |     u16224
+2020-01-10 11:16:09,708 p=wid u=15386 | [DEPRECATION WARNING]: The TRANSFORM_INVALID_GROUP_CHARS settings is set to allow bad 
+characters in group names by default, this will change, but still be user configurable 
+on deprecation. This feature will be removed in version 2.10. Deprecation warnings can 
+be disabled by setting deprecation_warnings=False in ansible.cfg.
+2020-01-10 11:16:09,709 p=wid u=15386 | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to
+see details
+
+2020-01-10 11:16:09,717 p=wid u=15386 |   hosts (5):
+2020-01-10 11:16:09,717 p=wid u=15386 |     widf1
+2020-01-10 11:16:09,717 p=wid u=15386 |     c7213
+2020-01-10 11:16:09,717 p=wid u=15386 |     c7214
+2020-01-10 11:16:09,717 p=wid u=15386 |     u16223
+2020-01-10 11:16:09,717 p=wid u=15386 |     u16224
+2020-01-10 11:16:32,294 p=wid u=15418 | ERROR! No action selected, at least one of --host, --graph or --list needs to be specified.
+2020-01-10 11:16:51,378 p=wid u=15444 | [DEPRECATION WARNING]: The TRANSFORM_INVALID_GROUP_CHARS settings is set to allow bad 
+characters in group names by default, this will change, but still be user configurable 
+on deprecation. This feature will be removed in version 2.10. Deprecation warnings can 
+be disabled by setting deprecation_warnings=False in ansible.cfg.
+2020-01-10 11:16:51,378 p=wid u=15444 | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to
+see details
+
+2020-01-10 11:16:51,400 p=wid u=15444 | {
+    "10.148.0.2": {
+        "hosts": [
+            "widf1"
+        ]
+    }, 
+    "35.198.210.9": {
+        "hosts": [
+            "widf1"
+        ]
+    }, 
+    "_meta": {
+        "hostvars": {
+            "c7213": {
+                "ansible_host": "192.168.98.213"
+            }, 
+            "c7214": {
+                "ansible_host": "192.168.98.214"
+            }, 
+            "u16223": {
+                "ansible_host": "192.168.98.223"
+            }, 
+            "u16224": {
+                "ansible_host": "192.168.98.224"
+            }, 
+            "widf1": {
+                "ansible_ssh_host": "35.198.210.9", 
+                "gce_description": "", 
+                "gce_id": "5781805978701422576", 
+                "gce_image": "ubuntu-1604-xenial-v20200108", 
+                "gce_machine_type": "f1-micro", 
+                "gce_metadata": {}, 
+                "gce_name": "widf1", 
+                "gce_network": "default", 
+                "gce_private_ip": "10.148.0.2", 
+                "gce_public_ip": "35.198.210.9", 
+                "gce_status": "RUNNING", 
+                "gce_subnetwork": "default", 
+                "gce_tags": [
+                    "http-server", 
+                    "https-server"
+                ], 
+                "gce_uuid": "9a7edd266ddbbd237b53feff0d2db51450b815ae", 
+                "gce_zone": "asia-southeast1-b"
+            }
+        }
+    }, 
+    "all": {
+        "children": [
+            "10.148.0.2", 
+            "35.198.210.9", 
+            "asia-southeast1-b", 
+            "centos", 
+            "f1-micro", 
+            "network_default", 
+            "status_running", 
+            "tag_http-server", 
+            "tag_https-server", 
+            "ubuntu", 
+            "ubuntu-1604-xenial-v20200108", 
+            "ungrouped", 
+            "widmetrocom"
+        ]
+    }, 
+    "asia-southeast1-b": {
+        "hosts": [
+            "widf1"
+        ]
+    }, 
+    "centos": {
+        "hosts": [
+            "c7213", 
+            "c7214"
+        ]
+    }, 
+    "f1-micro": {
+        "hosts": [
+            "widf1"
+        ]
+    }, 
+    "network_default": {
+        "hosts": [
+            "widf1"
+        ]
+    }, 
+    "status_running": {
+        "hosts": [
+            "widf1"
+        ]
+    }, 
+    "tag_http-server": {
+        "hosts": [
+            "widf1"
+        ]
+    }, 
+    "tag_https-server": {
+        "hosts": [
+            "widf1"
+        ]
+    }, 
+    "ubuntu": {
+        "hosts": [
+            "u16223", 
+            "u16224"
+        ]
+    }, 
+    "ubuntu-1604-xenial-v20200108": {
+        "hosts": [
+            "widf1"
+        ]
+    }, 
+    "widmetrocom": {
+        "children": [
+            "http-server", 
+            "https-server"
+        ]
+    }
+}
+2020-01-10 11:17:48,183 p=wid u=15502 | [DEPRECATION WARNING]: The TRANSFORM_INVALID_GROUP_CHARS settings is set to allow bad 
+characters in group names by default, this will change, but still be user configurable 
+on deprecation. This feature will be removed in version 2.10. Deprecation warnings can 
+be disabled by setting deprecation_warnings=False in ansible.cfg.
+2020-01-10 11:17:48,183 p=wid u=15502 | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to
+see details
+
+2020-01-10 11:17:48,192 p=wid u=15502 | {
+    "10.148.0.2": {
+        "hosts": [
+            "widf1"
+        ]
+    }, 
+    "35.198.210.9": {
+        "hosts": [
+            "widf1"
+        ]
+    }, 
+    "_meta": {
+        "hostvars": {
+            "widf1": {
+                "ansible_ssh_host": "35.198.210.9", 
+                "gce_description": "", 
+                "gce_id": "5781805978701422576", 
+                "gce_image": "ubuntu-1604-xenial-v20200108", 
+                "gce_machine_type": "f1-micro", 
+                "gce_metadata": {}, 
+                "gce_name": "widf1", 
+                "gce_network": "default", 
+                "gce_private_ip": "10.148.0.2", 
+                "gce_public_ip": "35.198.210.9", 
+                "gce_status": "RUNNING", 
+                "gce_subnetwork": "default", 
+                "gce_tags": [
+                    "http-server", 
+                    "https-server"
+                ], 
+                "gce_uuid": "9a7edd266ddbbd237b53feff0d2db51450b815ae", 
+                "gce_zone": "asia-southeast1-b"
+            }
+        }
+    }, 
+    "all": {
+        "children": [
+            "10.148.0.2", 
+            "35.198.210.9", 
+            "asia-southeast1-b", 
+            "f1-micro", 
+            "network_default", 
+            "status_running", 
+            "tag_http-server", 
+            "tag_https-server", 
+            "ubuntu-1604-xenial-v20200108", 
+            "ungrouped"
+        ]
+    }, 
+    "asia-southeast1-b": {
+        "hosts": [
+            "widf1"
+        ]
+    }, 
+    "f1-micro": {
+        "hosts": [
+            "widf1"
+        ]
+    }, 
+    "network_default": {
+        "hosts": [
+            "widf1"
+        ]
+    }, 
+    "status_running": {
+        "hosts": [
+            "widf1"
+        ]
+    }, 
+    "tag_http-server": {
+        "hosts": [
+            "widf1"
+        ]
+    }, 
+    "tag_https-server": {
+        "hosts": [
+            "widf1"
+        ]
+    }, 
+    "ubuntu-1604-xenial-v20200108": {
+        "hosts": [
+            "widf1"
+        ]
+    }
+}
+2020-01-10 11:21:58,219 p=wid u=15759 | [DEPRECATION WARNING]: The TRANSFORM_INVALID_GROUP_CHARS settings is set to allow bad 
+characters in group names by default, this will change, but still be user configurable 
+on deprecation. This feature will be removed in version 2.10. Deprecation warnings can 
+be disabled by setting deprecation_warnings=False in ansible.cfg.
+2020-01-10 11:21:58,219 p=wid u=15759 | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to
+see details
+
+2020-01-10 11:21:58,227 p=wid u=15759 | {
+    "10.148.0.2": {
+        "hosts": [
+            "widf1"
+        ]
+    }, 
+    "35.198.210.9": {
+        "hosts": [
+            "widf1"
+        ]
+    }, 
+    "_meta": {
+        "hostvars": {
+            "widf1": {
+                "ansible_ssh_host": "35.198.210.9", 
+                "gce_description": "", 
+                "gce_id": "5781805978701422576", 
+                "gce_image": "ubuntu-1604-xenial-v20200108", 
+                "gce_machine_type": "f1-micro", 
+                "gce_metadata": {}, 
+                "gce_name": "widf1", 
+                "gce_network": "default", 
+                "gce_private_ip": "10.148.0.2", 
+                "gce_public_ip": "35.198.210.9", 
+                "gce_status": "RUNNING", 
+                "gce_subnetwork": "default", 
+                "gce_tags": [
+                    "http-server", 
+                    "https-server"
+                ], 
+                "gce_uuid": "9a7edd266ddbbd237b53feff0d2db51450b815ae", 
+                "gce_zone": "asia-southeast1-b"
+            }
+        }
+    }, 
+    "all": {
+        "children": [
+            "10.148.0.2", 
+            "35.198.210.9", 
+            "asia-southeast1-b", 
+            "f1-micro", 
+            "network_default", 
+            "status_running", 
+            "tag_http-server", 
+            "tag_https-server", 
+            "ubuntu-1604-xenial-v20200108", 
+            "ungrouped"
+        ]
+    }, 
+    "asia-southeast1-b": {
+        "hosts": [
+            "widf1"
+        ]
+    }, 
+    "f1-micro": {
+        "hosts": [
+            "widf1"
+        ]
+    }, 
+    "network_default": {
+        "hosts": [
+            "widf1"
+        ]
+    }, 
+    "status_running": {
+        "hosts": [
+            "widf1"
+        ]
+    }, 
+    "tag_http-server": {
+        "hosts": [
+            "widf1"
+        ]
+    }, 
+    "tag_https-server": {
+        "hosts": [
+            "widf1"
+        ]
+    }, 
+    "ubuntu-1604-xenial-v20200108": {
+        "hosts": [
+            "widf1"
+        ]
+    }
+}
+2020-01-10 11:22:16,960 p=wid u=15789 | [DEPRECATION WARNING]: The TRANSFORM_INVALID_GROUP_CHARS settings is set to allow bad 
+characters in group names by default, this will change, but still be user configurable 
+on deprecation. This feature will be removed in version 2.10. Deprecation warnings can 
+be disabled by setting deprecation_warnings=False in ansible.cfg.
+2020-01-10 11:22:16,960 p=wid u=15789 | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to
+see details
+
+2020-01-10 11:22:16,981 p=wid u=15789 | {
+    "10.148.0.2": {
+        "hosts": [
+            "widf1"
+        ]
+    }, 
+    "35.198.210.9": {
+        "hosts": [
+            "widf1"
+        ]
+    }, 
+    "_meta": {
+        "hostvars": {
+            "c7213": {
+                "ansible_host": "192.168.98.213"
+            }, 
+            "c7214": {
+                "ansible_host": "192.168.98.214"
+            }, 
+            "u16223": {
+                "ansible_host": "192.168.98.223"
+            }, 
+            "u16224": {
+                "ansible_host": "192.168.98.224"
+            }, 
+            "widf1": {
+                "ansible_ssh_host": "35.198.210.9", 
+                "gce_description": "", 
+                "gce_id": "5781805978701422576", 
+                "gce_image": "ubuntu-1604-xenial-v20200108", 
+                "gce_machine_type": "f1-micro", 
+                "gce_metadata": {}, 
+                "gce_name": "widf1", 
+                "gce_network": "default", 
+                "gce_private_ip": "10.148.0.2", 
+                "gce_public_ip": "35.198.210.9", 
+                "gce_status": "RUNNING", 
+                "gce_subnetwork": "default", 
+                "gce_tags": [
+                    "http-server", 
+                    "https-server"
+                ], 
+                "gce_uuid": "9a7edd266ddbbd237b53feff0d2db51450b815ae", 
+                "gce_zone": "asia-southeast1-b"
+            }
+        }
+    }, 
+    "all": {
+        "children": [
+            "10.148.0.2", 
+            "35.198.210.9", 
+            "asia-southeast1-b", 
+            "centos", 
+            "f1-micro", 
+            "network_default", 
+            "status_running", 
+            "ubuntu", 
+            "ubuntu-1604-xenial-v20200108", 
+            "ungrouped", 
+            "widmetrocom"
+        ]
+    }, 
+    "asia-southeast1-b": {
+        "hosts": [
+            "widf1"
+        ]
+    }, 
+    "centos": {
+        "hosts": [
+            "c7213", 
+            "c7214"
+        ]
+    }, 
+    "f1-micro": {
+        "hosts": [
+            "widf1"
+        ]
+    }, 
+    "network_default": {
+        "hosts": [
+            "widf1"
+        ]
+    }, 
+    "status_running": {
+        "hosts": [
+            "widf1"
+        ]
+    }, 
+    "tag_http-server": {
+        "hosts": [
+            "widf1"
+        ]
+    }, 
+    "tag_https-server": {
+        "hosts": [
+            "widf1"
+        ]
+    }, 
+    "ubuntu": {
+        "hosts": [
+            "u16223", 
+            "u16224"
+        ]
+    }, 
+    "ubuntu-1604-xenial-v20200108": {
+        "hosts": [
+            "widf1"
+        ]
+    }, 
+    "widmetrocom": {
+        "children": [
+            "tag_http-server", 
+            "tag_https-server"
+        ]
+    }
+}
+2020-01-10 11:22:30,194 p=wid u=15807 | [DEPRECATION WARNING]: The TRANSFORM_INVALID_GROUP_CHARS settings is set to allow bad 
+characters in group names by default, this will change, but still be user configurable 
+on deprecation. This feature will be removed in version 2.10. Deprecation warnings can 
+be disabled by setting deprecation_warnings=False in ansible.cfg.
+2020-01-10 11:22:30,194 p=wid u=15807 | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to
+see details
+
+2020-01-10 11:22:30,202 p=wid u=15807 |   hosts (1):
+2020-01-10 11:22:30,202 p=wid u=15807 |     widf1
+2020-01-10 11:22:48,127 p=wid u=15841 | [DEPRECATION WARNING]: The TRANSFORM_INVALID_GROUP_CHARS settings is set to allow bad 
+characters in group names by default, this will change, but still be user configurable 
+on deprecation. This feature will be removed in version 2.10. Deprecation warnings can 
+be disabled by setting deprecation_warnings=False in ansible.cfg.
+2020-01-10 11:22:48,127 p=wid u=15841 | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to
+see details
+
+2020-01-10 11:22:48,135 p=wid u=15841 |   hosts (1):
+2020-01-10 11:22:48,135 p=wid u=15841 |     widf1

@@ -4,3 +4,11 @@ c7214 ansible_host=192.168.98.214
 [ubuntu]
 u16223 ansible_host=192.168.98.223
 u16224 ansible_host=192.168.98.224
+
+[tag_http-server]
+
+[tag_https-server]
+
+[widmetrocom:children]
+tag_http-server
+tag_https-server
