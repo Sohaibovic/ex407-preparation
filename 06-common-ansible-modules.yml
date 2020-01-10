@@ -1,0 +1,10 @@
+- name: common ansible modules
+  hosts: all
+  
+  tasks:
+  - name: create directory
+    file: path=files state=directory
+  - name: create file
+    file: path=files/file1.txt state=touch
+  - name: fill the file
+    lineinfile: path=files/file1.txt line='ini adalah file ke satu'

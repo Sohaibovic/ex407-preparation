@@ -1,0 +1,26 @@
+- name: Use variables to retrieve the results of running commands
+  hosts: all
+
+  tasks:
+  - name: cek disk space
+    command: 'df -Th /'
+    register: df
+  - debug: var=df.stdout_lines
+
+  - name: cek file /etc/motd exist
+    stat: path=/etc/motd
+    register: statmotd
+  - debug: var=statmotd.stat.exists
+
+  - name: cek directory /var/log exist
+    stat: path=/var/log
+    register: statlog
+  - debug: var=statlog.stat.exists
+  - name: give messages when exists
+    debug:
+     msg: "Path exists and is a directory"
+    when: statlog.stat.isdir is defined and statlog.stat.isdir
+  - name: give messages when not exists
+    debug:
+     msg: "Path not exists"
+    when: statlog.stat.exists == False

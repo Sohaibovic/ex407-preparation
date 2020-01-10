@@ -1,0 +1,24 @@
+- name: conditional
+  hosts: all
+  gather_facts: yes
+
+  tasks:
+  - name: cek file / directory not exist
+    stat: path=/var/logouts
+    register: statlogs
+  - debug: var=statlogs.stat.exists
+  - name: give messages when exists
+    debug:
+     msg: "Path exists and is a directory"
+    when: statlogs.stat.isdir is defined and statlogs.stat.isdir
+  - name: give messages when not exists
+    debug:
+     msg: "Path not exists"
+    when: statlogs.stat.exists == False
+
+  - name: install mysql-server if enough space on root 
+    package:
+      name: mysql-server 
+      state: present 
+    loop: "{{ ansible_mounts }}"
+    when: item.mount == "/" and item.size_available > 30000000000
