@@ -1,3 +1,5 @@
+#!/bin/bash
+
 mkdir ~/.ssh
 ssh-keygen -t rsa -b 2048 -N "" -f ~/.ssh/id_rsa
 ansible-doc openssh_keypair

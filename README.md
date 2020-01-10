@@ -4,6 +4,7 @@
 
 * Read basic ansible from https://docs.ansible.com
 * Praktek
+* Read tecmint tutorial based on ex407 objectives https://www.tecmint.com/understand-core-components-of-ansible/
 * Praktek lebih dalam dari hasil https://github.com/search?o=desc&q=ex407&s=updated&type=Repositories
 
 ## Objectives
