@@ -25,13 +25,13 @@
   * Create a static host inventory file
   * Create a configuration file
 
-* Configure Ansible managed nodes
+* [Configure Ansible managed nodes](https://github.com/widansible/ex407-preparation/blob/master/02-configure-nodes.md)
 
   *  Create and distribute SSH keys to managed nodes
   *  Configure privilege escalation on managed nodes
   *  Validate a working configuration using ad-hoc Ansible commands
 
-* Create simple shell scripts that run ad hoc Ansible commands
+* [Create simple shell scripts that run ad hoc Ansible commands](https://github.com/widansible/ex407-preparation/blob/master/03-ansible-adhoc-command.sh)
 * Use both static and dynamic inventories to define groups of hosts
 * Utilize an existing dynamic inventory script
 * Create Ansible plays and playbooks
