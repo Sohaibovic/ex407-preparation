@@ -1,0 +1,21 @@
+- name: error handling
+  hosts: all
+  any_errors_fatal: true
+
+  tasks:
+  - name: Handle the error
+    block:
+     - debug:
+        msg: 'I execute normally'
+     - name: i force a failure
+       command: /bin/false
+     - debug:
+        msg: 'I never execute, due to the above task failing, :-('
+    rescue:
+     - debug:
+        msg: 'I caught an error, can do stuff here to fix it, :-)'
+     - name: i force a failure again
+       command: /bin/false
+       ignore_errors: yes
+     - debug:
+        msg: 'I execute normally again'

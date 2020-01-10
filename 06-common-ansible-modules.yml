@@ -4,7 +4,11 @@
   tasks:
   - name: create directory
     file: path=files state=directory
+  - name: check file
+    stat: path=files/file1.txt
+    register: statfile1
   - name: create file
     file: path=files/file1.txt state=touch
+    when: statfile1.stat.exists == False
   - name: fill the file
     lineinfile: path=files/file1.txt line='ini adalah file ke satu'

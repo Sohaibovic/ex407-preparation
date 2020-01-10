@@ -5,6 +5,7 @@
   - name: cek disk space
     command: 'df -Th /'
     register: df
+  - debug: var=df
   - debug: var=df.stdout_lines
 
   - name: cek file /etc/motd exist

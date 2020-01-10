@@ -34,5 +34,6 @@ ansible-playbook -i localhost, 06-condition.yml -c local
 ## * Use variables to retrieve the results of running commands
 
 ## Referensi
+* https://www.tecmint.com/create-ansible-plays-and-playbooks/
 * https://github.com/splunk-elk-admin/ex407-ansible/blob/master/a.txt
-
+* https://docs.ansible.com/ansible/latest/user_guide/playbooks_error_handling.html

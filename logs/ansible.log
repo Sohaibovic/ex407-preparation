@@ -2181,3 +2181,744 @@ see details
 2020-01-10 15:21:16,554 p=wid u=9473 | skipping: [localhost] => (item={u'block_used': 808771, u'uuid': u'b8a24819-acb8-4039-be56-f83e68925499', u'size_total': 9179451392, u'block_total': 2241077, u'mount': u'/', u'block_available': 1432306, u'size_available': 5866725376, u'fstype': u'ext4', u'inode_total': 578224, u'inode_available': 472599, u'device': u'/dev/sda1', u'inode_used': 105625, u'block_size': 4096, u'options': u'rw,relatime,errors=remount-ro,data=ordered'}) 
 2020-01-10 15:21:16,557 p=wid u=9473 | PLAY RECAP ******************************************************************************
 2020-01-10 15:21:16,557 p=wid u=9473 | localhost                  : ok=4    changed=0    unreachable=0    failed=0    skipped=2    rescued=0    ignored=0   
+2020-01-10 16:30:41,586 p=wid u=9858 | PLAY [Use variables to retrieve the results of running commands] ************************
+2020-01-10 16:30:41,592 p=wid u=9858 | TASK [Gathering Facts] ******************************************************************
+2020-01-10 16:30:42,361 p=wid u=9858 | ok: [localhost]
+2020-01-10 16:30:42,371 p=wid u=9858 | TASK [cek disk space] *******************************************************************
+2020-01-10 16:30:42,642 p=wid u=9858 | changed: [localhost]
+2020-01-10 16:30:42,651 p=wid u=9858 | TASK [debug] ****************************************************************************
+2020-01-10 16:30:42,674 p=wid u=9858 | ok: [localhost] => {
+    "df": {
+        "changed": true, 
+        "cmd": [
+            "df", 
+            "-Th", 
+            "/"
+        ], 
+        "delta": "0:00:00.001928", 
+        "end": "2020-01-10 16:30:42.625481", 
+        "failed": false, 
+        "rc": 0, 
+        "start": "2020-01-10 16:30:42.623553", 
+        "stderr": "", 
+        "stderr_lines": [], 
+        "stdout": "Filesystem     Type  Size  Used Avail Use% Mounted on\n/dev/sda1      ext4  8.6G  2.7G  5.5G  33% /", 
+        "stdout_lines": [
+            "Filesystem     Type  Size  Used Avail Use% Mounted on", 
+            "/dev/sda1      ext4  8.6G  2.7G  5.5G  33% /"
+        ]
+    }
+}
+2020-01-10 16:30:42,683 p=wid u=9858 | TASK [debug] ****************************************************************************
+2020-01-10 16:30:42,706 p=wid u=9858 | ok: [localhost] => {
+    "df.stdout_lines": [
+        "Filesystem     Type  Size  Used Avail Use% Mounted on", 
+        "/dev/sda1      ext4  8.6G  2.7G  5.5G  33% /"
+    ]
+}
+2020-01-10 16:30:42,715 p=wid u=9858 | TASK [cek file /etc/motd exist] *********************************************************
+2020-01-10 16:30:42,974 p=wid u=9858 | ok: [localhost]
+2020-01-10 16:30:42,982 p=wid u=9858 | TASK [debug] ****************************************************************************
+2020-01-10 16:30:43,007 p=wid u=9858 | ok: [localhost] => {
+    "statmotd.stat.exists": true
+}
+2020-01-10 16:30:43,017 p=wid u=9858 | TASK [cek directory /var/log exist] *****************************************************
+2020-01-10 16:30:43,146 p=wid u=9858 | ok: [localhost]
+2020-01-10 16:30:43,156 p=wid u=9858 | TASK [debug] ****************************************************************************
+2020-01-10 16:30:43,177 p=wid u=9858 | ok: [localhost] => {
+    "statlog.stat.exists": true
+}
+2020-01-10 16:30:43,187 p=wid u=9858 | TASK [give messages when exists] ********************************************************
+2020-01-10 16:30:43,209 p=wid u=9858 | ok: [localhost] => {
+    "msg": "Path exists and is a directory"
+}
+2020-01-10 16:30:43,219 p=wid u=9858 | TASK [give messages when not exists] ****************************************************
+2020-01-10 16:30:43,239 p=wid u=9858 | skipping: [localhost]
+2020-01-10 16:30:43,241 p=wid u=9858 | PLAY RECAP ******************************************************************************
+2020-01-10 16:30:43,241 p=wid u=9858 | localhost                  : ok=9    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2020-01-10 16:34:28,102 p=wid u=10055 | [DEPRECATION WARNING]: The TRANSFORM_INVALID_GROUP_CHARS settings is set to allow bad 
+characters in group names by default, this will change, but still be user configurable 
+on deprecation. This feature will be removed in version 2.10. Deprecation warnings can 
+be disabled by setting deprecation_warnings=False in ansible.cfg.
+2020-01-10 16:34:28,102 p=wid u=10055 | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to
+see details
+
+2020-01-10 16:34:28,931 p=wid u=10055 | localhost | SUCCESS => {
+    "ansible_facts": {
+        "ansible_all_ipv4_addresses": [
+            "192.168.98.221", 
+            "192.168.122.122"
+        ], 
+        "ansible_all_ipv6_addresses": [
+            "fe80::5054:ff:fe99:db1e", 
+            "fe80::5054:ff:fefb:42ed"
+        ], 
+        "ansible_apparmor": {
+            "status": "enabled"
+        }, 
+        "ansible_architecture": "x86_64", 
+        "ansible_bios_date": "04/01/2014", 
+        "ansible_bios_version": "1.10.2-1ubuntu1", 
+        "ansible_cmdline": {
+            "BOOT_IMAGE": "/boot/vmlinuz-4.4.0-142-generic", 
+            "quiet": true, 
+            "ro": true, 
+            "root": "UUID=b8a24819-acb8-4039-be56-f83e68925499", 
+            "splash": true, 
+            "vt.handoff": "7"
+        }, 
+        "ansible_date_time": {
+            "date": "2020-01-10", 
+            "day": "10", 
+            "epoch": "1578648868", 
+            "hour": "16", 
+            "iso8601": "2020-01-10T09:34:28Z", 
+            "iso8601_basic": "20200110T163428890426", 
+            "iso8601_basic_short": "20200110T163428", 
+            "iso8601_micro": "2020-01-10T09:34:28.890492Z", 
+            "minute": "34", 
+            "month": "01", 
+            "second": "28", 
+            "time": "16:34:28", 
+            "tz": "WIB", 
+            "tz_offset": "+0700", 
+            "weekday": "Friday", 
+            "weekday_number": "5", 
+            "weeknumber": "01", 
+            "year": "2020"
+        }, 
+        "ansible_default_ipv4": {
+            "address": "192.168.122.122", 
+            "alias": "ens2", 
+            "broadcast": "192.168.122.255", 
+            "gateway": "192.168.122.1", 
+            "interface": "ens2", 
+            "macaddress": "52:54:00:fb:42:ed", 
+            "mtu": 1500, 
+            "netmask": "255.255.255.0", 
+            "network": "192.168.122.0", 
+            "type": "ether"
+        }, 
+        "ansible_default_ipv6": {}, 
+        "ansible_device_links": {
+            "ids": {
+                "sda": [
+                    "scsi-0QEMU_QEMU_HARDDISK_drive-scsi0-0-0"
+                ], 
+                "sda1": [
+                    "scsi-0QEMU_QEMU_HARDDISK_drive-scsi0-0-0-part1"
+                ], 
+                "sda2": [
+                    "scsi-0QEMU_QEMU_HARDDISK_drive-scsi0-0-0-part2"
+                ], 
+                "sda5": [
+                    "scsi-0QEMU_QEMU_HARDDISK_drive-scsi0-0-0-part5"
+                ]
+            }, 
+            "labels": {}, 
+            "masters": {}, 
+            "uuids": {
+                "sda1": [
+                    "b8a24819-acb8-4039-be56-f83e68925499"
+                ], 
+                "sda5": [
+                    "193b4c9a-cd13-4c0a-88bd-7005ec90eded"
+                ]
+            }
+        }, 
+        "ansible_devices": {
+            "loop0": {
+                "holders": [], 
+                "host": "", 
+                "links": {
+                    "ids": [], 
+                    "labels": [], 
+                    "masters": [], 
+                    "uuids": []
+                }, 
+                "model": null, 
+                "partitions": {}, 
+                "removable": "0", 
+                "rotational": "1", 
+                "sas_address": null, 
+                "sas_device_handle": null, 
+                "scheduler_mode": "", 
+                "sectors": "0", 
+                "sectorsize": "512", 
+                "size": "0.00 Bytes", 
+                "support_discard": "0", 
+                "vendor": null, 
+                "virtual": 1
+            }, 
+            "loop1": {
+                "holders": [], 
+                "host": "", 
+                "links": {
+                    "ids": [], 
+                    "labels": [], 
+                    "masters": [], 
+                    "uuids": []
+                }, 
+                "model": null, 
+                "partitions": {}, 
+                "removable": "0", 
+                "rotational": "1", 
+                "sas_address": null, 
+                "sas_device_handle": null, 
+                "scheduler_mode": "", 
+                "sectors": "0", 
+                "sectorsize": "512", 
+                "size": "0.00 Bytes", 
+                "support_discard": "0", 
+                "vendor": null, 
+                "virtual": 1
+            }, 
+            "loop2": {
+                "holders": [], 
+                "host": "", 
+                "links": {
+                    "ids": [], 
+                    "labels": [], 
+                    "masters": [], 
+                    "uuids": []
+                }, 
+                "model": null, 
+                "partitions": {}, 
+                "removable": "0", 
+                "rotational": "1", 
+                "sas_address": null, 
+                "sas_device_handle": null, 
+                "scheduler_mode": "", 
+                "sectors": "0", 
+                "sectorsize": "512", 
+                "size": "0.00 Bytes", 
+                "support_discard": "0", 
+                "vendor": null, 
+                "virtual": 1
+            }, 
+            "loop3": {
+                "holders": [], 
+                "host": "", 
+                "links": {
+                    "ids": [], 
+                    "labels": [], 
+                    "masters": [], 
+                    "uuids": []
+                }, 
+                "model": null, 
+                "partitions": {}, 
+                "removable": "0", 
+                "rotational": "1", 
+                "sas_address": null, 
+                "sas_device_handle": null, 
+                "scheduler_mode": "", 
+                "sectors": "0", 
+                "sectorsize": "512", 
+                "size": "0.00 Bytes", 
+                "support_discard": "0", 
+                "vendor": null, 
+                "virtual": 1
+            }, 
+            "loop4": {
+                "holders": [], 
+                "host": "", 
+                "links": {
+                    "ids": [], 
+                    "labels": [], 
+                    "masters": [], 
+                    "uuids": []
+                }, 
+                "model": null, 
+                "partitions": {}, 
+                "removable": "0", 
+                "rotational": "1", 
+                "sas_address": null, 
+                "sas_device_handle": null, 
+                "scheduler_mode": "", 
+                "sectors": "0", 
+                "sectorsize": "512", 
+                "size": "0.00 Bytes", 
+                "support_discard": "0", 
+                "vendor": null, 
+                "virtual": 1
+            }, 
+            "loop5": {
+                "holders": [], 
+                "host": "", 
+                "links": {
+                    "ids": [], 
+                    "labels": [], 
+                    "masters": [], 
+                    "uuids": []
+                }, 
+                "model": null, 
+                "partitions": {}, 
+                "removable": "0", 
+                "rotational": "1", 
+                "sas_address": null, 
+                "sas_device_handle": null, 
+                "scheduler_mode": "", 
+                "sectors": "0", 
+                "sectorsize": "512", 
+                "size": "0.00 Bytes", 
+                "support_discard": "0", 
+                "vendor": null, 
+                "virtual": 1
+            }, 
+            "loop6": {
+                "holders": [], 
+                "host": "", 
+                "links": {
+                    "ids": [], 
+                    "labels": [], 
+                    "masters": [], 
+                    "uuids": []
+                }, 
+                "model": null, 
+                "partitions": {}, 
+                "removable": "0", 
+                "rotational": "1", 
+                "sas_address": null, 
+                "sas_device_handle": null, 
+                "scheduler_mode": "", 
+                "sectors": "0", 
+                "sectorsize": "512", 
+                "size": "0.00 Bytes", 
+                "support_discard": "0", 
+                "vendor": null, 
+                "virtual": 1
+            }, 
+            "loop7": {
+                "holders": [], 
+                "host": "", 
+                "links": {
+                    "ids": [], 
+                    "labels": [], 
+                    "masters": [], 
+                    "uuids": []
+                }, 
+                "model": null, 
+                "partitions": {}, 
+                "removable": "0", 
+                "rotational": "1", 
+                "sas_address": null, 
+                "sas_device_handle": null, 
+                "scheduler_mode": "", 
+                "sectors": "0", 
+                "sectorsize": "512", 
+                "size": "0.00 Bytes", 
+                "support_discard": "0", 
+                "vendor": null, 
+                "virtual": 1
+            }, 
+            "sda": {
+                "holders": [], 
+                "host": "SCSI storage controller: LSI Logic / Symbios Logic 53c895a", 
+                "links": {
+                    "ids": [
+                        "scsi-0QEMU_QEMU_HARDDISK_drive-scsi0-0-0"
+                    ], 
+                    "labels": [], 
+                    "masters": [], 
+                    "uuids": []
+                }, 
+                "model": "QEMU HARDDISK", 
+                "partitions": {
+                    "sda1": {
+                        "holders": [], 
+                        "links": {
+                            "ids": [
+                                "scsi-0QEMU_QEMU_HARDDISK_drive-scsi0-0-0-part1"
+                            ], 
+                            "labels": [], 
+                            "masters": [], 
+                            "uuids": [
+                                "b8a24819-acb8-4039-be56-f83e68925499"
+                            ]
+                        }, 
+                        "sectors": "18481152", 
+                        "sectorsize": 512, 
+                        "size": "8.81 GB", 
+                        "start": "2048", 
+                        "uuid": "b8a24819-acb8-4039-be56-f83e68925499"
+                    }, 
+                    "sda2": {
+                        "holders": [], 
+                        "links": {
+                            "ids": [
+                                "scsi-0QEMU_QEMU_HARDDISK_drive-scsi0-0-0-part2"
+                            ], 
+                            "labels": [], 
+                            "masters": [], 
+                            "uuids": []
+                        }, 
+                        "sectors": "2", 
+                        "sectorsize": 512, 
+                        "size": "1.00 KB", 
+                        "start": "18485246", 
+                        "uuid": null
+                    }, 
+                    "sda5": {
+                        "holders": [], 
+                        "links": {
+                            "ids": [
+                                "scsi-0QEMU_QEMU_HARDDISK_drive-scsi0-0-0-part5"
+                            ], 
+                            "labels": [], 
+                            "masters": [], 
+                            "uuids": [
+                                "193b4c9a-cd13-4c0a-88bd-7005ec90eded"
+                            ]
+                        }, 
+                        "sectors": "387072", 
+                        "sectorsize": 512, 
+                        "size": "189.00 MB", 
+                        "start": "18485248", 
+                        "uuid": "193b4c9a-cd13-4c0a-88bd-7005ec90eded"
+                    }
+                }, 
+                "removable": "0", 
+                "rotational": "1", 
+                "sas_address": null, 
+                "sas_device_handle": null, 
+                "scheduler_mode": "deadline", 
+                "sectors": "18874368", 
+                "sectorsize": "512", 
+                "size": "9.00 GB", 
+                "support_discard": "4096", 
+                "vendor": "QEMU", 
+                "virtual": 1
+            }
+        }, 
+        "ansible_distribution": "Ubuntu", 
+        "ansible_distribution_file_parsed": true, 
+        "ansible_distribution_file_path": "/etc/os-release", 
+        "ansible_distribution_file_variety": "Debian", 
+        "ansible_distribution_major_version": "16", 
+        "ansible_distribution_release": "xenial", 
+        "ansible_distribution_version": "16.04", 
+        "ansible_dns": {
+            "nameservers": [
+                "192.168.122.1"
+            ]
+        }, 
+        "ansible_domain": "", 
+        "ansible_effective_group_id": 1002, 
+        "ansible_effective_user_id": 1002, 
+        "ansible_ens2": {
+            "active": true, 
+            "device": "ens2", 
+            "ipv4": {
+                "address": "192.168.122.122", 
+                "broadcast": "192.168.122.255", 
+                "netmask": "255.255.255.0", 
+                "network": "192.168.122.0"
+            }, 
+            "ipv6": [
+                {
+                    "address": "fe80::5054:ff:fefb:42ed", 
+                    "prefix": "64", 
+                    "scope": "link"
+                }
+            ], 
+            "macaddress": "52:54:00:fb:42:ed", 
+            "module": "8139cp", 
+            "mtu": 1500, 
+            "pciid": "0000:00:02.0", 
+            "promisc": false, 
+            "speed": 100, 
+            "type": "ether"
+        }, 
+        "ansible_ens7": {
+            "active": true, 
+            "device": "ens7", 
+            "ipv4": {
+                "address": "192.168.98.221", 
+                "broadcast": "192.168.98.255", 
+                "netmask": "255.255.255.0", 
+                "network": "192.168.98.0"
+            }, 
+            "ipv6": [
+                {
+                    "address": "fe80::5054:ff:fe99:db1e", 
+                    "prefix": "64", 
+                    "scope": "link"
+                }
+            ], 
+            "macaddress": "52:54:00:99:db:1e", 
+            "module": "8139cp", 
+            "mtu": 1500, 
+            "pciid": "0000:00:07.0", 
+            "promisc": false, 
+            "speed": 100, 
+            "type": "ether"
+        }, 
+        "ansible_env": {
+            "HOME": "/home/wid", 
+            "LANG": "en_US", 
+            "LANGUAGE": "en_US:", 
+            "LESSCLOSE": "/usr/bin/lesspipe %s %s", 
+            "LESSOPEN": "| /usr/bin/lesspipe %s", 
+            "LOGNAME": "wid", 
+            "LS_COLORS": "rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:", 
+            "MAIL": "/var/mail/wid", 
+            "OLDPWD": "/home/wid", 
+            "PATH": "/home/wid/bin:/home/wid/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games", 
+            "PWD": "/data/ansible/ex407-preparation", 
+            "SHELL": "/bin/bash", 
+            "SHLVL": "1", 
+            "SSH_CLIENT": "192.168.122.1 36896 22", 
+            "SSH_CONNECTION": "192.168.122.1 36896 192.168.122.122 22", 
+            "SSH_TTY": "/dev/pts/2", 
+            "TERM": "screen", 
+            "USER": "wid", 
+            "XDG_RUNTIME_DIR": "/run/user/1002", 
+            "XDG_SESSION_ID": "4", 
+            "_": "/usr/bin/ansible"
+        }, 
+        "ansible_fibre_channel_wwn": [], 
+        "ansible_fips": false, 
+        "ansible_form_factor": "Other", 
+        "ansible_fqdn": "ubuntu", 
+        "ansible_hostname": "ubuntu", 
+        "ansible_hostnqn": "", 
+        "ansible_interfaces": [
+            "lo", 
+            "ens7", 
+            "ens2"
+        ], 
+        "ansible_is_chroot": false, 
+        "ansible_iscsi_iqn": "", 
+        "ansible_kernel": "4.4.0-142-generic", 
+        "ansible_kernel_version": "#168-Ubuntu SMP Wed Jan 16 21:00:45 UTC 2019", 
+        "ansible_lo": {
+            "active": true, 
+            "device": "lo", 
+            "ipv4": {
+                "address": "127.0.0.1", 
+                "broadcast": "host", 
+                "netmask": "255.0.0.0", 
+                "network": "127.0.0.0"
+            }, 
+            "ipv6": [
+                {
+                    "address": "::1", 
+                    "prefix": "128", 
+                    "scope": "host"
+                }
+            ], 
+            "mtu": 65536, 
+            "promisc": false, 
+            "type": "loopback"
+        }, 
+        "ansible_local": {}, 
+        "ansible_lsb": {
+            "codename": "xenial", 
+            "description": "Ubuntu 16.04.6 LTS", 
+            "id": "Ubuntu", 
+            "major_release": "16", 
+            "release": "16.04"
+        }, 
+        "ansible_machine": "x86_64", 
+        "ansible_machine_id": "ff622e884a6332c16f3e263b5e167358", 
+        "ansible_memfree_mb": 126, 
+        "ansible_memory_mb": {
+            "nocache": {
+                "free": 849, 
+                "used": 2086
+            }, 
+            "real": {
+                "free": 126, 
+                "total": 2935, 
+                "used": 2809
+            }, 
+            "swap": {
+                "cached": 0, 
+                "free": 185, 
+                "total": 188, 
+                "used": 3
+            }
+        }, 
+        "ansible_memtotal_mb": 2935, 
+        "ansible_mounts": [
+            {
+                "block_available": 1432276, 
+                "block_size": 4096, 
+                "block_total": 2241077, 
+                "block_used": 808801, 
+                "device": "/dev/sda1", 
+                "fstype": "ext4", 
+                "inode_available": 472576, 
+                "inode_total": 578224, 
+                "inode_used": 105648, 
+                "mount": "/", 
+                "options": "rw,relatime,errors=remount-ro,data=ordered", 
+                "size_available": 5866602496, 
+                "size_total": 9179451392, 
+                "uuid": "b8a24819-acb8-4039-be56-f83e68925499"
+            }
+        ], 
+        "ansible_nodename": "ubuntu", 
+        "ansible_os_family": "Debian", 
+        "ansible_pkg_mgr": "apt", 
+        "ansible_proc_cmdline": {
+            "BOOT_IMAGE": "/boot/vmlinuz-4.4.0-142-generic", 
+            "quiet": true, 
+            "ro": true, 
+            "root": "UUID=b8a24819-acb8-4039-be56-f83e68925499", 
+            "splash": true, 
+            "vt.handoff": "7"
+        }, 
+        "ansible_processor": [
+            "0", 
+            "GenuineIntel", 
+            "Intel Core Processor (Skylake, IBRS)", 
+            "1", 
+            "GenuineIntel", 
+            "Intel Core Processor (Skylake, IBRS)"
+        ], 
+        "ansible_processor_cores": 1, 
+        "ansible_processor_count": 2, 
+        "ansible_processor_threads_per_core": 1, 
+        "ansible_processor_vcpus": 2, 
+        "ansible_product_name": "Standard PC (i440FX + PIIX, 1996)", 
+        "ansible_product_serial": "NA", 
+        "ansible_product_uuid": "NA", 
+        "ansible_product_version": "pc-i440fx-bionic", 
+        "ansible_python": {
+            "executable": "/usr/bin/python", 
+            "has_sslcontext": true, 
+            "type": "CPython", 
+            "version": {
+                "major": 2, 
+                "micro": 12, 
+                "minor": 7, 
+                "releaselevel": "final", 
+                "serial": 0
+            }, 
+            "version_info": [
+                2, 
+                7, 
+                12, 
+                "final", 
+                0
+            ]
+        }, 
+        "ansible_python_version": "2.7.12", 
+        "ansible_real_group_id": 1002, 
+        "ansible_real_user_id": 1002, 
+        "ansible_selinux": {
+            "status": "Missing selinux Python library"
+        }, 
+        "ansible_selinux_python_present": false, 
+        "ansible_service_mgr": "systemd", 
+        "ansible_ssh_host_key_dsa_public": "AAAAB3NzaC1kc3MAAACBANReppco2o+Mfm6VxA1M//RLchKPGJMeXi6HKGjst4oLnQQ1fQkgRSUo6HCUksYRWGmo1vHPQxMz8udnZlBLLyd8TX5IHkKDxg8AKK1KEI7t0K1wMv3IDLDZ80GlXtwfis7+2r2XXyoHi535i4mSk4pFUPtg99IfApe2dRkHaJ3tAAAAFQCL7/lXh1Yxhm2Y+Y8V7+PRqBK+BQAAAIB17B8TJq1B/tyXez3z6Vnh39QYp6y3iawbrljDIlwTu2FX9QlpzwYLvUzag2pPCecXh6LfG1YD6XvKUYQPFgKkCd2vuZAoqTbT/SI6P5gSTozNRFfnPebULmpdUi0Lopoqj3KXF/0hsLNlUUjddNaT0Zok2KNn39+8NxlWPPwsNQAAAIAGh9FgbjFvyh2SWIzcL56Zya70W+iRypFyKWQNVMjNw23WPtapWfNq5pdat43NNi1KbNdqjLzATUHKI/KB6lEJ0Qi1E7xGjJgO8pg7emXWa69eg/ZwpAK5miKGXED0bXvfhWioTfw0o/kH9+HmBoZwaQzdt/SB9YiTJ7kO+aOozA==", 
+        "ansible_ssh_host_key_ecdsa_public": "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBCgEtLCP+8zSKvvame+MEqXmgtx+utTefNaOCVuk803WOIivgAnmGo9SzP/whpsXzKmj4O60yubnmmCv/tSCN5I=", 
+        "ansible_ssh_host_key_ed25519_public": "AAAAC3NzaC1lZDI1NTE5AAAAILd/uh5eDjnXSYV7TbncHQXivyIRLHXvosx+xJWUufNu", 
+        "ansible_ssh_host_key_rsa_public": "AAAAB3NzaC1yc2EAAAADAQABAAABAQDjXPs2z3vLndAuGmVod+aBoS4uYYGhukuaxsP6Jqd5DbtzIUqHw8C5fRNj3MPEwbm3sqasI2DZImmFe3nWW5kStUWydt7AD1CpPoqFJCrQRVnjwaSyySBsKd/x5G7I9dWTRdW0m+vau2h93HDvJ8fbV8uhp2p7SbEhPZanv1WXiheG6Grn3R8a+jWpRVmJio2sh4Bukj2ZaCky+HatZzq0zx2Vjt3LDrTgamOOEOCZ2ZmPn49Gyofzgs8F3hJu64iMczR07TwL+XdzVW4ylG+D0LaVM0BL9Q8mDvyB7yXOpDHE+2BhMmPLSlCf6Ah0XCj4C59Ci2n2f5JFGZMwoM25", 
+        "ansible_swapfree_mb": 185, 
+        "ansible_swaptotal_mb": 188, 
+        "ansible_system": "Linux", 
+        "ansible_system_capabilities": [
+            ""
+        ], 
+        "ansible_system_capabilities_enforced": "True", 
+        "ansible_system_vendor": "QEMU", 
+        "ansible_uptime_seconds": 78402, 
+        "ansible_user_dir": "/home/wid", 
+        "ansible_user_gecos": ",,,", 
+        "ansible_user_gid": 1002, 
+        "ansible_user_id": "wid", 
+        "ansible_user_shell": "/bin/bash", 
+        "ansible_user_uid": 1002, 
+        "ansible_userspace_architecture": "x86_64", 
+        "ansible_userspace_bits": "64", 
+        "ansible_virtualization_role": "guest", 
+        "ansible_virtualization_type": "kvm", 
+        "gather_subset": [
+            "all"
+        ], 
+        "module_setup": true
+    }, 
+    "changed": false
+}
+2020-01-10 16:47:15,311 p=wid u=10170 | [WARNING]: module loop not found in:
+/home/wid/.ansible/plugins/modules:/usr/share/ansible/plugins/modules:/usr/lib/python2.7
+/dist-packages/ansible/modules
+
+2020-01-10 16:51:51,178 p=wid u=10187 | [WARNING]: Found variable using reserved name: tasks
+
+2020-01-10 16:51:51,179 p=wid u=10187 | PLAY [Install Software packages] ********************************************************
+2020-01-10 16:51:51,189 p=wid u=10187 | TASK [Gathering Facts] ******************************************************************
+2020-01-10 16:51:51,269 p=wid u=10187 | fatal: [localhost]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Permission denied (publickey,password).", "unreachable": true}
+2020-01-10 16:51:51,271 p=wid u=10187 | PLAY RECAP ******************************************************************************
+2020-01-10 16:51:51,272 p=wid u=10187 | localhost                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2020-01-10 16:52:13,902 p=wid u=10245 | [WARNING]: Found variable using reserved name: tasks
+
+2020-01-10 16:52:13,903 p=wid u=10245 | PLAY [Install Software packages] ********************************************************
+2020-01-10 16:52:13,914 p=wid u=10245 | TASK [Gathering Facts] ******************************************************************
+2020-01-10 16:52:16,092 p=wid u=10245 | ok: [localhost]
+2020-01-10 16:52:16,095 p=wid u=10245 | PLAY RECAP ******************************************************************************
+2020-01-10 16:52:16,096 p=wid u=10245 | localhost                  : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-01-10 16:53:03,613 p=wid u=10344 | [WARNING]: Found variable using reserved name: tasks
+
+2020-01-10 16:53:03,614 p=wid u=10344 | PLAY [Install Software packages] ********************************************************
+2020-01-10 16:53:03,625 p=wid u=10344 | TASK [Gathering Facts] ******************************************************************
+2020-01-10 16:53:04,481 p=wid u=10344 | ok: [localhost]
+2020-01-10 16:53:04,484 p=wid u=10344 | PLAY RECAP ******************************************************************************
+2020-01-10 16:53:04,485 p=wid u=10344 | localhost                  : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-01-10 17:05:25,756 p=wid u=10463 | PLAY [Install Software packages] ********************************************************
+2020-01-10 17:05:25,763 p=wid u=10463 | TASK [Gathering Facts] ******************************************************************
+2020-01-10 17:05:27,945 p=wid u=10463 | ok: [localhost]
+2020-01-10 17:05:27,996 p=wid u=10463 | TASK [Install "{{ item.name }}" on Debian] **********************************************
+2020-01-10 17:05:28,846 p=wid u=10463 | failed: [localhost] (item={u'required': True, u'name': u'zip'}) => {"ansible_loop_var": "item", "changed": false, "item": {"name": "zip", "required": true}, "msg": "No package matching '{ item.name }}' is available"}
+2020-01-10 17:05:29,461 p=wid u=10463 | failed: [localhost] (item={u'required': True, u'name': u'unzip'}) => {"ansible_loop_var": "item", "changed": false, "item": {"name": "unzip", "required": true}, "msg": "No package matching '{ item.name }}' is available"}
+2020-01-10 17:05:29,466 p=wid u=10463 | skipping: [localhost] => (item={u'required': False, u'name': u'git'}) 
+2020-01-10 17:05:29,469 p=wid u=10463 | PLAY RECAP ******************************************************************************
+2020-01-10 17:05:29,470 p=wid u=10463 | localhost                  : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2020-01-10 17:05:42,150 p=wid u=10619 | PLAY [Install Software packages] ********************************************************
+2020-01-10 17:05:42,158 p=wid u=10619 | TASK [Gathering Facts] ******************************************************************
+2020-01-10 17:05:43,044 p=wid u=10619 | ok: [localhost]
+2020-01-10 17:05:43,063 p=wid u=10619 | TASK [Install "{{ item.name }}" on Debian] **********************************************
+2020-01-10 17:05:46,668 p=wid u=10619 | changed: [localhost] => (item={u'required': True, u'name': u'zip'})
+2020-01-10 17:05:47,835 p=wid u=10619 | ok: [localhost] => (item={u'required': True, u'name': u'unzip'})
+2020-01-10 17:05:47,843 p=wid u=10619 | skipping: [localhost] => (item={u'required': False, u'name': u'git'}) 
+2020-01-10 17:05:47,846 p=wid u=10619 | PLAY RECAP ******************************************************************************
+2020-01-10 17:05:47,847 p=wid u=10619 | localhost                  : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-01-10 17:40:14,757 p=wid u=11188 | PLAY [error handling] *******************************************************************
+2020-01-10 17:40:14,764 p=wid u=11188 | TASK [Gathering Facts] ******************************************************************
+2020-01-10 17:40:16,990 p=wid u=11188 | ok: [localhost]
+2020-01-10 17:40:17,000 p=wid u=11188 | TASK [debug] ****************************************************************************
+2020-01-10 17:40:17,062 p=wid u=11188 | ok: [localhost] => {
+    "msg": "I execute normally"
+}
+2020-01-10 17:40:17,074 p=wid u=11188 | TASK [i force a failure] ****************************************************************
+2020-01-10 17:40:17,369 p=wid u=11188 | fatal: [localhost]: FAILED! => {"changed": true, "cmd": ["/bin/false"], "delta": "0:00:00.002319", "end": "2020-01-10 17:40:17.344900", "msg": "non-zero return code", "rc": 1, "start": "2020-01-10 17:40:17.342581", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+2020-01-10 17:40:17,379 p=wid u=11188 | TASK [debug] ****************************************************************************
+2020-01-10 17:40:17,395 p=wid u=11188 | ok: [localhost] => {
+    "msg": "I caught an error, can do stuff here to fix it, :-)"
+}
+2020-01-10 17:40:17,399 p=wid u=11188 | PLAY RECAP ******************************************************************************
+2020-01-10 17:40:17,400 p=wid u=11188 | localhost                  : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=1    ignored=0   
+2020-01-10 17:41:25,268 p=wid u=11320 | PLAY [error handling] *******************************************************************
+2020-01-10 17:41:25,275 p=wid u=11320 | TASK [Gathering Facts] ******************************************************************
+2020-01-10 17:41:27,479 p=wid u=11320 | ok: [localhost]
+2020-01-10 17:41:27,492 p=wid u=11320 | TASK [debug] ****************************************************************************
+2020-01-10 17:41:27,505 p=wid u=11320 | ok: [localhost] => {
+    "msg": "I execute normally"
+}
+2020-01-10 17:41:27,515 p=wid u=11320 | TASK [i force a failure] ****************************************************************
+2020-01-10 17:41:27,869 p=wid u=11320 | fatal: [localhost]: FAILED! => {"changed": true, "cmd": ["/bin/false"], "delta": "0:00:00.001602", "end": "2020-01-10 17:41:27.845951", "msg": "non-zero return code", "rc": 1, "start": "2020-01-10 17:41:27.844349", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+2020-01-10 17:41:27,878 p=wid u=11320 | TASK [debug] ****************************************************************************
+2020-01-10 17:41:27,891 p=wid u=11320 | ok: [localhost] => {
+    "msg": "I caught an error, can do stuff here to fix it, :-)"
+}
+2020-01-10 17:41:27,900 p=wid u=11320 | TASK [i force a failure again] **********************************************************
+2020-01-10 17:41:28,103 p=wid u=11320 | fatal: [localhost]: FAILED! => {"changed": true, "cmd": ["/bin/false"], "delta": "0:00:00.001705", "end": "2020-01-10 17:41:28.081458", "msg": "non-zero return code", "rc": 1, "start": "2020-01-10 17:41:28.079753", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+2020-01-10 17:41:28,104 p=wid u=11320 | ...ignoring
+2020-01-10 17:41:28,113 p=wid u=11320 | TASK [debug] ****************************************************************************
+2020-01-10 17:41:28,126 p=wid u=11320 | ok: [localhost] => {
+    "msg": "I execute normally again"
+}
+2020-01-10 17:41:28,128 p=wid u=11320 | PLAY RECAP ******************************************************************************
+2020-01-10 17:41:28,128 p=wid u=11320 | localhost                  : ok=5    changed=1    unreachable=0    failed=0    skipped=0    rescued=1    ignored=1   

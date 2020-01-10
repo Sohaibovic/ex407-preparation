@@ -1,0 +1,22 @@
+- name: Install Software packages
+  hosts: all
+  become: yes
+  any_errors_fatal: true
+
+  vars:
+   packages:
+    - name: zip
+      required: True
+    - name: unzip
+      required: True
+    - name: git
+      required: False
+
+  tasks:
+   - name: Install "{{ item.name }}" on Debian
+     package: 
+      name: "{{ item.name }}"
+      state: present
+     when: item.required == True
+     loop: "{{ packages }}"
+     ignore_errors: yes
