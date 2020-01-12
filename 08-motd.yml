@@ -1,0 +1,10 @@
+- name: template with jinja2 for motd
+  hosts: all
+
+  become: yes
+
+  tasks:
+  - name: change /etc/motd
+    template:
+     src: template/motd.j2
+     dest: /etc/motd

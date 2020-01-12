@@ -42,8 +42,8 @@
   *  [Know how to work with commonly used Ansible modules](https://github.com/widansible/ex407-preparation/blob/master/06-common-ansible-modules.yml)
   *  [Use variables to retrieve the results of running commands](https://github.com/widansible/ex407-preparation/blob/master/06-retrieve-var.yml)
   *  [Use conditionals to control play execution](https://github.com/widansible/ex407-preparation/blob/master/06-condition.yml)
-  *  Configure error handling
-  *  Create playbooks to configure systems to a specified state
+  *  [Configure error handling](https://github.com/widansible/ex407-preparation/blob/master/06-error-handling.yml)
+  *  [Create playbooks to configure systems to a specified state](https://github.com/widansible/ex407-preparation/blob/master/06-state.yml
 
 * Use Ansible modules for system administration tasks that work with:
 
