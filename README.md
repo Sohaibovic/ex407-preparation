@@ -43,9 +43,9 @@
   *  [Use variables to retrieve the results of running commands](https://github.com/widansible/ex407-preparation/blob/master/06-retrieve-var.yml)
   *  [Use conditionals to control play execution](https://github.com/widansible/ex407-preparation/blob/master/06-condition.yml)
   *  [Configure error handling](https://github.com/widansible/ex407-preparation/blob/master/06-error-handling.yml)
-  *  [Create playbooks to configure systems to a specified state](https://github.com/widansible/ex407-preparation/blob/master/06-state.yml
+  *  [Create playbooks to configure systems to a specified state](https://github.com/widansible/ex407-preparation/blob/master/06-state.yml)
 
-* Use Ansible modules for system administration tasks that work with:
+* [Use Ansible modules for system administration tasks that work with:](https://github.com/widansible/ex407-preparation/blob/master/07-modules-admin.md)
 
   *  Software packages and repositories
   *  Services
@@ -58,8 +58,8 @@
   *  Security
   *  Users and groups
 
-* Create and use templates to create customized configuration files
-* Work with Ansible variables and facts
+* [Create and use templates to create customized configuration files](https://github.com/widansible/ex407-preparation/blob/master/08-template.md)
+* [Work with Ansible variables and facts](https://github.com/widansible/ex407-preparation/blob/master/09-variable-and-facts.md)
 * Create and work with roles
 * Download roles from an Ansible Galaxy and use them
 * Manage parallelism
