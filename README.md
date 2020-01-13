@@ -60,11 +60,11 @@
 
 * [Create and use templates to create customized configuration files](https://github.com/widansible/ex407-preparation/blob/master/08-template.md)
 * [Work with Ansible variables and facts](https://github.com/widansible/ex407-preparation/blob/master/09-variable-and-facts.md)
-* Create and work with roles
-* Download roles from an Ansible Galaxy and use them
-* Manage parallelism
-* Use Ansible Vault in playbooks to protect sensitive data
-* Use provided documentation to look up specific information about Ansible modules and commands
+* [Create and work with roles](https://github.com/widansible/ex407-preparation/blob/master/10-roles.md)
+* [Download roles from an Ansible Galaxy and use them](https://github.com/widansible/ex407-preparation/blob/master/11-roles-from-galaxy.md)
+* [Manage parallelism](https://github.com/widansible/ex407-preparation/blob/master/12-parallelism-forks.md)
+* [Use Ansible Vault in playbooks to protect sensitive data](https://github.com/widansible/ex407-preparation/blob/master/13-forks.md)
+* [Use provided documentation to look up specific information about Ansible modules and commands](https://github.com/widansible/ex407-preparation/blob/master/14-doc.md)
 
 ## Referensi
 

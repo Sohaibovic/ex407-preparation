@@ -6892,3 +6892,459 @@ configurable on deprecation. This feature will be removed in version 2.10. Depre
     }, 
     "changed": false
 }
+2020-01-13 09:47:36,404 p=wid u=4845 | # /data/ansible/ex407-preparation/roles
+2020-01-13 09:47:36,406 p=wid u=4845 | - nickhammond.logrotate, master
+2020-01-13 09:47:49,255 p=wid u=4871 | ERROR! Invalid query. At least one search term, platform, galaxy tag or author must be provided.
+2020-01-13 09:48:24,194 p=wid u=4907 | No roles match your search.
+2020-01-13 09:48:59,215 p=wid u=4953 | No roles match your search.
+2020-01-13 10:06:58,217 p=wid u=5919 | Encryption successful
+2020-01-13 10:07:54,300 p=wid u=6005 | [WARNING]:  * Failed to parse /data/ansible/ex407-preparation/05-gce.py with
+script plugin: Inventory script (/data/ansible/ex407-preparation/05-gce.py) had
+an execution error: Traceback (most recent call last):   File
+"/data/ansible/ex407-preparation/05-gce.py", line 521, in <module>
+GceInventory()   File "/data/ansible/ex407-preparation/05-gce.py", line 151, in
+__init__     self.config = self.get_config()   File
+"/data/ansible/ex407-preparation/05-gce.py", line 219, in get_config
+config.read(gce_ini_path)   File "/usr/lib/python2.7/ConfigParser.py", line
+305, in read     self._read(fp, filename)   File
+"/usr/lib/python2.7/ConfigParser.py", line 512, in _read     raise
+MissingSectionHeaderError(fpname, lineno, line)
+ConfigParser.MissingSectionHeaderError: File contains no section headers. file:
+/data/ansible/ex407-preparation/05-gce.ini, line: 1
+'$ANSIBLE_VAULT;1.1;AES256\n'
+
+2020-01-13 10:07:54,300 p=wid u=6005 | [WARNING]:  * Failed to parse /data/ansible/ex407-preparation/05-gce.py with
+ini plugin: /data/ansible/ex407-preparation/05-gce.py:6: Error parsing host
+definition ''''': No closing quotation
+
+2020-01-13 10:07:54,301 p=wid u=6005 | [WARNING]: Unable to parse /data/ansible/ex407-preparation/05-gce.py as an
+inventory source
+
+2020-01-13 10:07:54,301 p=wid u=6005 | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2020-01-13 10:07:54,301 p=wid u=6005 | {
+    "_meta": {
+        "hostvars": {}
+    }, 
+    "all": {
+        "children": [
+            "ungrouped"
+        ]
+    }
+}
+2020-01-13 10:08:07,650 p=wid u=6016 | [WARNING]:  * Failed to parse /data/ansible/ex407-preparation/05-gce.py with
+script plugin: Inventory script (/data/ansible/ex407-preparation/05-gce.py) had
+an execution error: Traceback (most recent call last):   File
+"/data/ansible/ex407-preparation/05-gce.py", line 521, in <module>
+GceInventory()   File "/data/ansible/ex407-preparation/05-gce.py", line 151, in
+__init__     self.config = self.get_config()   File
+"/data/ansible/ex407-preparation/05-gce.py", line 219, in get_config
+config.read(gce_ini_path)   File "/usr/lib/python2.7/ConfigParser.py", line
+305, in read     self._read(fp, filename)   File
+"/usr/lib/python2.7/ConfigParser.py", line 512, in _read     raise
+MissingSectionHeaderError(fpname, lineno, line)
+ConfigParser.MissingSectionHeaderError: File contains no section headers. file:
+/data/ansible/ex407-preparation/05-gce.ini, line: 1
+'$ANSIBLE_VAULT;1.1;AES256\n'
+
+2020-01-13 10:08:07,650 p=wid u=6016 | [WARNING]:  * Failed to parse /data/ansible/ex407-preparation/05-gce.py with
+ini plugin: /data/ansible/ex407-preparation/05-gce.py:6: Error parsing host
+definition ''''': No closing quotation
+
+2020-01-13 10:08:07,650 p=wid u=6016 | [WARNING]: Unable to parse /data/ansible/ex407-preparation/05-gce.py as an
+inventory source
+
+2020-01-13 10:08:07,650 p=wid u=6016 | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2020-01-13 10:08:07,651 p=wid u=6016 | {
+    "_meta": {
+        "hostvars": {}
+    }, 
+    "all": {
+        "children": [
+            "ungrouped"
+        ]
+    }
+}
+2020-01-13 10:13:15,241 p=wid u=6312 | [WARNING]:  * Failed to parse /data/ansible/ex407-preparation/05-gce.py with
+script plugin: Inventory script (/data/ansible/ex407-preparation/05-gce.py) had
+an execution error: Traceback (most recent call last):   File
+"/data/ansible/ex407-preparation/05-gce.py", line 521, in <module>
+GceInventory()   File "/data/ansible/ex407-preparation/05-gce.py", line 151, in
+__init__     self.config = self.get_config()   File
+"/data/ansible/ex407-preparation/05-gce.py", line 219, in get_config
+config.read(gce_ini_path)   File "/usr/lib/python2.7/ConfigParser.py", line
+305, in read     self._read(fp, filename)   File
+"/usr/lib/python2.7/ConfigParser.py", line 512, in _read     raise
+MissingSectionHeaderError(fpname, lineno, line)
+ConfigParser.MissingSectionHeaderError: File contains no section headers. file:
+/data/ansible/ex407-preparation/05-gce.ini, line: 1
+'$ANSIBLE_VAULT;1.1;AES256\n'
+
+2020-01-13 10:13:15,241 p=wid u=6312 | [WARNING]:  * Failed to parse /data/ansible/ex407-preparation/05-gce.py with
+ini plugin: /data/ansible/ex407-preparation/05-gce.py:6: Error parsing host
+definition ''''': No closing quotation
+
+2020-01-13 10:13:15,241 p=wid u=6312 | [WARNING]: Unable to parse /data/ansible/ex407-preparation/05-gce.py as an
+inventory source
+
+2020-01-13 10:13:15,241 p=wid u=6312 | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2020-01-13 10:13:15,242 p=wid u=6312 | [WARNING]: provided hosts list is empty, only localhost is available. Note that
+the implicit localhost does not match 'all'
+
+2020-01-13 10:13:15,242 p=wid u=6312 |   hosts (0):
+2020-01-13 10:13:34,833 p=wid u=6329 | [WARNING]:  * Failed to parse /data/ansible/ex407-preparation/05-gce.py with
+script plugin: Inventory script (/data/ansible/ex407-preparation/05-gce.py) had
+an execution error: Traceback (most recent call last):   File
+"/data/ansible/ex407-preparation/05-gce.py", line 521, in <module>
+GceInventory()   File "/data/ansible/ex407-preparation/05-gce.py", line 151, in
+__init__     self.config = self.get_config()   File
+"/data/ansible/ex407-preparation/05-gce.py", line 219, in get_config
+config.read(gce_ini_path)   File "/usr/lib/python2.7/ConfigParser.py", line
+305, in read     self._read(fp, filename)   File
+"/usr/lib/python2.7/ConfigParser.py", line 512, in _read     raise
+MissingSectionHeaderError(fpname, lineno, line)
+ConfigParser.MissingSectionHeaderError: File contains no section headers. file:
+/data/ansible/ex407-preparation/05-gce.ini, line: 1
+'$ANSIBLE_VAULT;1.1;AES256\n'
+
+2020-01-13 10:13:34,834 p=wid u=6329 | [WARNING]:  * Failed to parse /data/ansible/ex407-preparation/05-gce.py with
+ini plugin: /data/ansible/ex407-preparation/05-gce.py:6: Error parsing host
+definition ''''': No closing quotation
+
+2020-01-13 10:13:34,834 p=wid u=6329 | [WARNING]: Unable to parse /data/ansible/ex407-preparation/05-gce.py as an
+inventory source
+
+2020-01-13 10:13:34,834 p=wid u=6329 | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2020-01-13 10:13:34,852 p=wid u=6329 | ERROR! Syntax Error while loading YAML.
+  did not find expected <document start>
+
+The error appears to be in '/data/ansible/ex407-preparation/05-gce.ini': line 41, column 1, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+2020-01-13 10:13:52,198 p=wid u=6347 |  [ERROR]: User interrupted execution
+
+2020-01-13 10:13:59,412 p=wid u=6354 | [WARNING]:  * Failed to parse /data/ansible/ex407-preparation/05-gce.py with
+script plugin: Inventory script (/data/ansible/ex407-preparation/05-gce.py) had
+an execution error: Traceback (most recent call last):   File
+"/data/ansible/ex407-preparation/05-gce.py", line 521, in <module>
+GceInventory()   File "/data/ansible/ex407-preparation/05-gce.py", line 151, in
+__init__     self.config = self.get_config()   File
+"/data/ansible/ex407-preparation/05-gce.py", line 219, in get_config
+config.read(gce_ini_path)   File "/usr/lib/python2.7/ConfigParser.py", line
+305, in read     self._read(fp, filename)   File
+"/usr/lib/python2.7/ConfigParser.py", line 512, in _read     raise
+MissingSectionHeaderError(fpname, lineno, line)
+ConfigParser.MissingSectionHeaderError: File contains no section headers. file:
+/data/ansible/ex407-preparation/05-gce.ini, line: 1
+'$ANSIBLE_VAULT;1.1;AES256\n'
+
+2020-01-13 10:13:59,412 p=wid u=6354 | [WARNING]:  * Failed to parse /data/ansible/ex407-preparation/05-gce.py with
+ini plugin: /data/ansible/ex407-preparation/05-gce.py:6: Error parsing host
+definition ''''': No closing quotation
+
+2020-01-13 10:13:59,413 p=wid u=6354 | [WARNING]: Unable to parse /data/ansible/ex407-preparation/05-gce.py as an
+inventory source
+
+2020-01-13 10:13:59,413 p=wid u=6354 | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2020-01-13 10:13:59,431 p=wid u=6354 | ERROR! Syntax Error while loading YAML.
+  did not find expected <document start>
+
+The error appears to be in '/data/ansible/ex407-preparation/05-gce.ini': line 41, column 1, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+2020-01-13 10:14:11,406 p=wid u=6370 | Decryption successful
+2020-01-13 10:14:28,711 p=wid u=6394 | [DEPRECATION WARNING]: The TRANSFORM_INVALID_GROUP_CHARS settings is set to 
+allow bad characters in group names by default, this will change, but still be 
+user configurable on deprecation. This feature will be removed in version 2.10.
+ Deprecation warnings can be disabled by setting deprecation_warnings=False in 
+ansible.cfg.
+2020-01-13 10:14:28,711 p=wid u=6394 | [WARNING]: Invalid characters were found in group names but not replaced, use
+-vvvv to see details
+
+2020-01-13 10:14:28,714 p=wid u=6394 |   hosts (1):
+2020-01-13 10:14:28,714 p=wid u=6394 |     widf1
+2020-01-13 10:16:31,791 p=wid u=6498 | Encryption successful
+2020-01-13 10:16:54,369 p=wid u=6519 | [WARNING]: Error in vault password file loading (None): A vault password must
+be specified to decrypt data
+
+2020-01-13 10:16:54,369 p=wid u=6519 | ERROR! A vault password must be specified to decrypt data
+2020-01-13 10:17:18,663 p=wid u=6553 | [WARNING]: Error in vault password file loading (): A vault password must be
+specified to decrypt data
+
+2020-01-13 10:17:18,663 p=wid u=6553 | ERROR! A vault password must be specified to decrypt data
+2020-01-13 10:17:42,294 p=wid u=6573 | [WARNING]:  * Failed to parse /data/ansible/ex407-preparation/05-gce.py with
+script plugin: Inventory script (/data/ansible/ex407-preparation/05-gce.py) had
+an execution error: Traceback (most recent call last):   File
+"/data/ansible/ex407-preparation/05-gce.py", line 521, in <module>
+GceInventory()   File "/data/ansible/ex407-preparation/05-gce.py", line 151, in
+__init__     self.config = self.get_config()   File
+"/data/ansible/ex407-preparation/05-gce.py", line 219, in get_config
+config.read(gce_ini_path)   File "/usr/lib/python2.7/ConfigParser.py", line
+305, in read     self._read(fp, filename)   File
+"/usr/lib/python2.7/ConfigParser.py", line 512, in _read     raise
+MissingSectionHeaderError(fpname, lineno, line)
+ConfigParser.MissingSectionHeaderError: File contains no section headers. file:
+/data/ansible/ex407-preparation/05-gce.ini, line: 1
+'$ANSIBLE_VAULT;1.1;AES256\n'
+
+2020-01-13 10:17:42,294 p=wid u=6573 | [WARNING]:  * Failed to parse /data/ansible/ex407-preparation/05-gce.py with
+ini plugin: /data/ansible/ex407-preparation/05-gce.py:6: Error parsing host
+definition ''''': No closing quotation
+
+2020-01-13 10:17:42,294 p=wid u=6573 | [WARNING]: Unable to parse /data/ansible/ex407-preparation/05-gce.py as an
+inventory source
+
+2020-01-13 10:17:42,294 p=wid u=6573 | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2020-01-13 10:17:42,295 p=wid u=6573 | [WARNING]: provided hosts list is empty, only localhost is available. Note that
+the implicit localhost does not match 'all'
+
+2020-01-13 10:17:42,295 p=wid u=6573 |   hosts (0):
+2020-01-13 10:18:09,102 p=wid u=6595 | [WARNING]:  * Failed to parse /data/ansible/ex407-preparation/05-gce.py with
+script plugin: Inventory script (/data/ansible/ex407-preparation/05-gce.py) had
+an execution error: Traceback (most recent call last):   File
+"/data/ansible/ex407-preparation/05-gce.py", line 521, in <module>
+GceInventory()   File "/data/ansible/ex407-preparation/05-gce.py", line 151, in
+__init__     self.config = self.get_config()   File
+"/data/ansible/ex407-preparation/05-gce.py", line 219, in get_config
+config.read(gce_ini_path)   File "/usr/lib/python2.7/ConfigParser.py", line
+305, in read     self._read(fp, filename)   File
+"/usr/lib/python2.7/ConfigParser.py", line 512, in _read     raise
+MissingSectionHeaderError(fpname, lineno, line)
+ConfigParser.MissingSectionHeaderError: File contains no section headers. file:
+/data/ansible/ex407-preparation/05-gce.ini, line: 1
+'$ANSIBLE_VAULT;1.1;AES256\n'
+
+2020-01-13 10:18:09,102 p=wid u=6595 | [WARNING]:  * Failed to parse /data/ansible/ex407-preparation/05-gce.py with
+ini plugin: /data/ansible/ex407-preparation/05-gce.py:6: Error parsing host
+definition ''''': No closing quotation
+
+2020-01-13 10:18:09,102 p=wid u=6595 | [WARNING]: Unable to parse /data/ansible/ex407-preparation/05-gce.py as an
+inventory source
+
+2020-01-13 10:18:09,103 p=wid u=6595 | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2020-01-13 10:18:09,103 p=wid u=6595 | [WARNING]: provided hosts list is empty, only localhost is available. Note that
+the implicit localhost does not match 'all'
+
+2020-01-13 10:18:09,103 p=wid u=6595 |   hosts (0):
+2020-01-13 10:18:14,167 p=wid u=6606 | [WARNING]:  * Failed to parse /data/ansible/ex407-preparation/05-gce.py with
+script plugin: Inventory script (/data/ansible/ex407-preparation/05-gce.py) had
+an execution error: Traceback (most recent call last):   File
+"/data/ansible/ex407-preparation/05-gce.py", line 521, in <module>
+GceInventory()   File "/data/ansible/ex407-preparation/05-gce.py", line 151, in
+__init__     self.config = self.get_config()   File
+"/data/ansible/ex407-preparation/05-gce.py", line 219, in get_config
+config.read(gce_ini_path)   File "/usr/lib/python2.7/ConfigParser.py", line
+305, in read     self._read(fp, filename)   File
+"/usr/lib/python2.7/ConfigParser.py", line 512, in _read     raise
+MissingSectionHeaderError(fpname, lineno, line)
+ConfigParser.MissingSectionHeaderError: File contains no section headers. file:
+/data/ansible/ex407-preparation/05-gce.ini, line: 1
+'$ANSIBLE_VAULT;1.1;AES256\n'
+
+2020-01-13 10:18:14,167 p=wid u=6606 | [WARNING]:  * Failed to parse /data/ansible/ex407-preparation/05-gce.py with
+ini plugin: /data/ansible/ex407-preparation/05-gce.py:6: Error parsing host
+definition ''''': No closing quotation
+
+2020-01-13 10:18:14,170 p=wid u=6606 | [WARNING]: Unable to parse /data/ansible/ex407-preparation/05-gce.py as an
+inventory source
+
+2020-01-13 10:18:14,170 p=wid u=6606 | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2020-01-13 10:18:14,171 p=wid u=6606 | [WARNING]: provided hosts list is empty, only localhost is available. Note that
+the implicit localhost does not match 'all'
+
+2020-01-13 10:18:14,171 p=wid u=6606 |   hosts (0):
+2020-01-13 10:18:59,960 p=wid u=6640 | Decryption successful
+2020-01-13 10:19:51,372 p=wid u=6678 | Encryption successful
+2020-01-13 10:20:29,754 p=wid u=6719 | ERROR! The vault password file /data/ansible/ex407-preparation/gce was not found
+2020-01-13 10:20:33,184 p=wid u=6725 | ERROR! The vault password file /data/ansible/ex407-preparation/gce was not found
+2020-01-13 10:20:46,790 p=wid u=6734 | [WARNING]:  * Failed to parse /data/ansible/ex407-preparation/05-gce.py with
+script plugin: Inventory script (/data/ansible/ex407-preparation/05-gce.py) had
+an execution error: Traceback (most recent call last):   File
+"/data/ansible/ex407-preparation/05-gce.py", line 521, in <module>
+GceInventory()   File "/data/ansible/ex407-preparation/05-gce.py", line 151, in
+__init__     self.config = self.get_config()   File
+"/data/ansible/ex407-preparation/05-gce.py", line 219, in get_config
+config.read(gce_ini_path)   File "/usr/lib/python2.7/ConfigParser.py", line
+305, in read     self._read(fp, filename)   File
+"/usr/lib/python2.7/ConfigParser.py", line 512, in _read     raise
+MissingSectionHeaderError(fpname, lineno, line)
+ConfigParser.MissingSectionHeaderError: File contains no section headers. file:
+/data/ansible/ex407-preparation/05-gce.ini, line: 1
+'$ANSIBLE_VAULT;1.2;AES256;gce\n'
+
+2020-01-13 10:20:46,790 p=wid u=6734 | [WARNING]:  * Failed to parse /data/ansible/ex407-preparation/05-gce.py with
+ini plugin: /data/ansible/ex407-preparation/05-gce.py:6: Error parsing host
+definition ''''': No closing quotation
+
+2020-01-13 10:20:46,790 p=wid u=6734 | [WARNING]: Unable to parse /data/ansible/ex407-preparation/05-gce.py as an
+inventory source
+
+2020-01-13 10:20:46,790 p=wid u=6734 | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2020-01-13 10:20:46,791 p=wid u=6734 | [WARNING]: provided hosts list is empty, only localhost is available. Note that
+the implicit localhost does not match 'all'
+
+2020-01-13 10:20:46,791 p=wid u=6734 |   hosts (0):
+2020-01-13 10:22:11,055 p=wid u=6892 | Decryption successful
+2020-01-13 10:24:59,945 p=wid u=7235 | ERROR! 08-motd.yml exists, please use 'edit' instead
+2020-01-13 10:25:10,324 p=wid u=7252 | Encryption successful
+2020-01-13 10:25:22,564 p=wid u=7275 | ERROR! Attempting to decrypt but no vault secrets found
+2020-01-13 10:25:30,787 p=wid u=7284 | PLAY [template with jinja2 for motd] *******************************************
+2020-01-13 10:25:30,796 p=wid u=7284 | TASK [Gathering Facts] *********************************************************
+2020-01-13 10:25:30,879 p=wid u=7284 | fatal: [localhost]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added 'localhost' (ECDSA) to the list of known hosts.\r\nansible@localhost: Permission denied (publickey,password).", "unreachable": true}
+2020-01-13 10:25:30,881 p=wid u=7284 | PLAY RECAP *********************************************************************
+2020-01-13 10:25:30,882 p=wid u=7284 | localhost                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2020-01-13 10:26:03,237 p=root u=7353 | PLAY [template with jinja2 for motd] *******************************************
+2020-01-13 10:26:03,244 p=root u=7353 | TASK [Gathering Facts] *********************************************************
+2020-01-13 10:26:05,007 p=root u=7353 | ok: [localhost]
+2020-01-13 10:26:05,023 p=root u=7353 | TASK [change /etc/motd] ********************************************************
+2020-01-13 10:26:05,628 p=root u=7353 | changed: [localhost]
+2020-01-13 10:26:05,629 p=root u=7353 | PLAY RECAP *********************************************************************
+2020-01-13 10:26:05,629 p=root u=7353 | localhost                  : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-01-13 10:26:51,422 p=wid u=7700 | Decryption successful
+2020-01-13 10:37:09,147 p=wid u=8280 | [WARNING]: Unable to parse /data/ansible/ex407-preparation/localhost as an
+inventory source
+
+2020-01-13 10:37:09,148 p=wid u=8280 | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2020-01-13 10:37:09,148 p=wid u=8280 | [WARNING]: provided hosts list is empty, only localhost is available. Note that
+the implicit localhost does not match 'all'
+
+2020-01-13 10:37:09,319 p=wid u=8280 | PLAY [vault.yml example] *******************************************************
+2020-01-13 10:37:09,320 p=wid u=8280 | skipping: no hosts matched
+2020-01-13 10:37:09,320 p=wid u=8280 | PLAY RECAP *********************************************************************
+2020-01-13 10:37:18,328 p=root u=8293 | [WARNING]: Unable to parse /data/ansible/ex407-preparation/localhost as an
+inventory source
+
+2020-01-13 10:37:18,328 p=root u=8293 | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2020-01-13 10:37:18,329 p=root u=8293 | [WARNING]: provided hosts list is empty, only localhost is available. Note that
+the implicit localhost does not match 'all'
+
+2020-01-13 10:37:18,496 p=root u=8293 | PLAY [vault.yml example] *******************************************************
+2020-01-13 10:37:18,496 p=root u=8293 | skipping: no hosts matched
+2020-01-13 10:37:18,496 p=root u=8293 | PLAY RECAP *********************************************************************
+2020-01-13 10:38:35,188 p=wid u=8358 | Decryption successful
+2020-01-13 10:38:51,910 p=wid u=8379 | PLAY [vault.yml example] *******************************************************
+2020-01-13 10:38:51,917 p=wid u=8379 | TASK [Gathering Facts] *********************************************************
+2020-01-13 10:38:51,997 p=wid u=8379 | fatal: [localhost]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ansible@localhost: Permission denied (publickey,password).", "unreachable": true}
+2020-01-13 10:38:52,000 p=wid u=8379 | PLAY RECAP *********************************************************************
+2020-01-13 10:38:52,000 p=wid u=8379 | localhost                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2020-01-13 10:38:55,319 p=root u=8398 | PLAY [vault.yml example] *******************************************************
+2020-01-13 10:38:55,326 p=root u=8398 | TASK [Gathering Facts] *********************************************************
+2020-01-13 10:38:55,409 p=root u=8398 | fatal: [localhost]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ansible@localhost: Permission denied (publickey,password).", "unreachable": true}
+2020-01-13 10:38:55,412 p=root u=8398 | PLAY RECAP *********************************************************************
+2020-01-13 10:38:55,412 p=root u=8398 | localhost                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2020-01-13 10:38:59,560 p=root u=8412 | PLAY [vault.yml example] *******************************************************
+2020-01-13 10:38:59,568 p=root u=8412 | TASK [Gathering Facts] *********************************************************
+2020-01-13 10:39:01,069 p=root u=8412 | ok: [localhost]
+2020-01-13 10:39:01,091 p=root u=8412 | TASK [show shadow] *************************************************************
+2020-01-13 10:39:01,366 p=root u=8412 | changed: [localhost]
+2020-01-13 10:39:01,382 p=root u=8412 | TASK [debug] *******************************************************************
+2020-01-13 10:39:01,447 p=root u=8412 | ok: [localhost] => {
+    "shadow.stdout.lines": "VARIABLE IS NOT DEFINED!"
+}
+2020-01-13 10:39:01,448 p=root u=8412 | PLAY RECAP *********************************************************************
+2020-01-13 10:39:01,449 p=root u=8412 | localhost                  : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-01-13 10:39:28,256 p=root u=8676 | PLAY [vault.yml example] *******************************************************
+2020-01-13 10:39:28,263 p=root u=8676 | TASK [Gathering Facts] *********************************************************
+2020-01-13 10:39:29,190 p=root u=8676 | ok: [localhost]
+2020-01-13 10:39:29,205 p=root u=8676 | TASK [show shadow] *************************************************************
+2020-01-13 10:39:29,504 p=root u=8676 | changed: [localhost]
+2020-01-13 10:39:29,519 p=root u=8676 | TASK [debug] *******************************************************************
+2020-01-13 10:39:29,612 p=root u=8676 | ok: [localhost] => {
+    "shadow.stdout_lines": [
+        "root:$6$1TQp2NXd$T8QmMYyefLSYSa5W/wr8.K7BvoLla292Cl7xA4KH/Npz1C1eRCIeClpTyJAnBEvimNxnyowtjZOQT/XElIVPT0:18269:0:99999:7:::", 
+        "daemon:*:18113:0:99999:7:::", 
+        "bin:*:18113:0:99999:7:::", 
+        "sys:*:18113:0:99999:7:::", 
+        "sync:*:18113:0:99999:7:::", 
+        "games:*:18113:0:99999:7:::", 
+        "man:*:18113:0:99999:7:::", 
+        "lp:*:18113:0:99999:7:::", 
+        "mail:*:18113:0:99999:7:::", 
+        "news:*:18113:0:99999:7:::", 
+        "uucp:*:18113:0:99999:7:::", 
+        "proxy:*:18113:0:99999:7:::", 
+        "www-data:*:18113:0:99999:7:::", 
+        "backup:*:18113:0:99999:7:::", 
+        "list:*:18113:0:99999:7:::", 
+        "irc:*:18113:0:99999:7:::", 
+        "gnats:*:18113:0:99999:7:::", 
+        "nobody:*:18113:0:99999:7:::", 
+        "systemd-network:*:18113:0:99999:7:::", 
+        "systemd-resolve:*:18113:0:99999:7:::", 
+        "syslog:*:18113:0:99999:7:::", 
+        "messagebus:*:18113:0:99999:7:::", 
+        "_apt:*:18113:0:99999:7:::", 
+        "lxd:*:18113:0:99999:7:::", 
+        "uuidd:*:18113:0:99999:7:::", 
+        "dnsmasq:*:18113:0:99999:7:::", 
+        "landscape:*:18113:0:99999:7:::", 
+        "pollinate:*:18113:0:99999:7:::", 
+        "sshd:*:18269:0:99999:7:::", 
+        "wid:$6$pxR0LOLakZRMJXnF$leRQE.n1vOuPOdcj9zAArS5N2uvSghACKFEtvLD6uNgGiGDNbfovTUD1w1ZtWhvkNOiRnJW60UIDJe0iPWazI1:18269:0:99999:7:::", 
+        "rtkit:*:18268:0:99999:7:::", 
+        "usbmux:*:18268:0:99999:7:::", 
+        "pulse:*:18268:0:99999:7:::", 
+        "libvirt-qemu:!:18268:0:99999:7:::", 
+        "libvirt-dnsmasq:!:18268:0:99999:7:::"
+    ]
+}
+2020-01-13 10:39:29,614 p=root u=8676 | PLAY RECAP *********************************************************************
+2020-01-13 10:39:29,614 p=root u=8676 | localhost                  : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-01-13 10:40:28,346 p=wid u=8855 | Encryption successful
+2020-01-13 10:40:37,741 p=root u=8877 | PLAY [vault.yml example] *******************************************************
+2020-01-13 10:40:37,748 p=root u=8877 | TASK [Gathering Facts] *********************************************************
+2020-01-13 10:40:39,322 p=root u=8877 | ok: [localhost]
+2020-01-13 10:40:39,341 p=root u=8877 | TASK [show shadow] *************************************************************
+2020-01-13 10:40:39,618 p=root u=8877 | changed: [localhost]
+2020-01-13 10:40:39,633 p=root u=8877 | TASK [debug] *******************************************************************
+2020-01-13 10:40:39,701 p=root u=8877 | ok: [localhost] => {
+    "shadow.stdout_lines": [
+        "root:$6$1TQp2NXd$T8QmMYyefLSYSa5W/wr8.K7BvoLla292Cl7xA4KH/Npz1C1eRCIeClpTyJAnBEvimNxnyowtjZOQT/XElIVPT0:18269:0:99999:7:::", 
+        "daemon:*:18113:0:99999:7:::", 
+        "bin:*:18113:0:99999:7:::", 
+        "sys:*:18113:0:99999:7:::", 
+        "sync:*:18113:0:99999:7:::", 
+        "games:*:18113:0:99999:7:::", 
+        "man:*:18113:0:99999:7:::", 
+        "lp:*:18113:0:99999:7:::", 
+        "mail:*:18113:0:99999:7:::", 
+        "news:*:18113:0:99999:7:::", 
+        "uucp:*:18113:0:99999:7:::", 
+        "proxy:*:18113:0:99999:7:::", 
+        "www-data:*:18113:0:99999:7:::", 
+        "backup:*:18113:0:99999:7:::", 
+        "list:*:18113:0:99999:7:::", 
+        "irc:*:18113:0:99999:7:::", 
+        "gnats:*:18113:0:99999:7:::", 
+        "nobody:*:18113:0:99999:7:::", 
+        "systemd-network:*:18113:0:99999:7:::", 
+        "systemd-resolve:*:18113:0:99999:7:::", 
+        "syslog:*:18113:0:99999:7:::", 
+        "messagebus:*:18113:0:99999:7:::", 
+        "_apt:*:18113:0:99999:7:::", 
+        "lxd:*:18113:0:99999:7:::", 
+        "uuidd:*:18113:0:99999:7:::", 
+        "dnsmasq:*:18113:0:99999:7:::", 
+        "landscape:*:18113:0:99999:7:::", 
+        "pollinate:*:18113:0:99999:7:::", 
+        "sshd:*:18269:0:99999:7:::", 
+        "wid:$6$pxR0LOLakZRMJXnF$leRQE.n1vOuPOdcj9zAArS5N2uvSghACKFEtvLD6uNgGiGDNbfovTUD1w1ZtWhvkNOiRnJW60UIDJe0iPWazI1:18269:0:99999:7:::", 
+        "rtkit:*:18268:0:99999:7:::", 
+        "usbmux:*:18268:0:99999:7:::", 
+        "pulse:*:18268:0:99999:7:::", 
+        "libvirt-qemu:!:18268:0:99999:7:::", 
+        "libvirt-dnsmasq:!:18268:0:99999:7:::"
+    ]
+}
+2020-01-13 10:40:39,703 p=root u=8877 | PLAY RECAP *********************************************************************
+2020-01-13 10:40:39,703 p=root u=8877 | localhost                  : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
