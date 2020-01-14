@@ -1,5 +1,21 @@
 # Utilize an existing dynamic inventory script
 
+## Example ssh_config.py script
+```
+git clone https://github.com/ansible/ansible
+cp ansible/contrib/inventory/ssh_config.py 05-ssh_config.py
+mkdir
+cat <<EOL>> ~/.ssh/config
+Host serverkamu
+ Hostname serverkamu.com
+ User root
+ Port 3922
+ IdentityFile ~/.ssh/id_rsa
+EOL
+ansible all -i 05-ssh_config.py -m ping
+```
+
+## Example GCP dynamic inventory script
 ```
 git clone https://github.com/ansible/ansible
 cp ansible/contrib/inventory/gce* .
