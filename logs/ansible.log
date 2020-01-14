@@ -7348,3 +7348,13 @@ the implicit localhost does not match 'all'
 }
 2020-01-13 10:40:39,703 p=root u=8877 | PLAY RECAP *********************************************************************
 2020-01-13 10:40:39,703 p=root u=8877 | localhost                  : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-01-13 14:29:41,268 p=wid u=24402 | [WARNING]: module openssh-keypair not found in:
+/home/wid/.ansible/plugins/modules:/usr/share/ansible/plugins/modules:/usr/lib/python2.7/dist-
+packages/ansible/modules
+
+2020-01-13 14:29:49,339 p=wid u=24411 | [WARNING]: module openssh not found in:
+/home/wid/.ansible/plugins/modules:/usr/share/ansible/plugins/modules:/usr/lib/python2.7/dist-
+packages/ansible/modules
+
+2020-01-13 18:51:57,693 p=wid u=5287 | Encryption successful
+2020-01-13 18:54:05,309 p=wid u=5424 | Encryption successful
