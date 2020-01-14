@@ -63,7 +63,7 @@
 * [Create and work with roles](https://github.com/widansible/ex407-preparation/blob/master/10-roles.md)
 * [Download roles from an Ansible Galaxy and use them](https://github.com/widansible/ex407-preparation/blob/master/11-roles-from-galaxy.md)
 * [Manage parallelism](https://github.com/widansible/ex407-preparation/blob/master/12-parallelism-forks.md)
-* [Use Ansible Vault in playbooks to protect sensitive data](https://github.com/widansible/ex407-preparation/blob/master/13-forks.md)
+* [Use Ansible Vault in playbooks to protect sensitive data](https://github.com/widansible/ex407-preparation/blob/master/13-vault.md)
 * [Use provided documentation to look up specific information about Ansible modules and commands](https://github.com/widansible/ex407-preparation/blob/master/14-doc.md)
 
 ## Referensi
