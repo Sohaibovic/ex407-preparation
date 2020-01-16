@@ -1,0 +1,17 @@
+- hosts: all
+  become: yes
+
+  tasks:
+    - name: install web
+      yum:
+        name: '{{ item }}'
+        state: present
+      loop:
+        - httpd
+        - wget
+        - unzip
+    - name: start and enabled
+      service:
+        name: httpd
+        state: started
+        enabled: true

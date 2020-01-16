@@ -1,0 +1,6 @@
+{% if ansible_fqdn in groups['prod'] %}
+Production
+{% endif %}
+{% if ansible_fqdn in groups['dev'] %}
+Development
+{% endif %}

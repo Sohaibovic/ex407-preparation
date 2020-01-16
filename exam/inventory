@@ -1,0 +1,11 @@
+[prod]
+node1.192.168.122.21.nip.io ansible_host=192.168.122.21
+node2.192.168.122.22.nip.io ansible_host=192.168.122.22
+[dev]
+node3.192.168.122.23.nip.io ansible_host=192.168.122.23
+[balancer]
+node4.192.168.122.24.nip.io ansible_host=192.168.122.24
+[qa]
+node5.192.168.122.25.nip.io ansible_host=192.168.122.25
+[webservers:children]
+prod
