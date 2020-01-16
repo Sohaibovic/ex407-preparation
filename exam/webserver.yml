@@ -1,0 +1,25 @@
+- hosts: all
+  become: yes
+
+  tasks:
+    - name: create webserver3 directory
+      file:
+        path: /webserver3
+        state: directory
+    - name: link to html
+      file:
+        src: /webserver3
+        dest: /var/www/html/webserver3
+        state: link
+    - name: insert index.html
+      lineinfile:
+        path: /webserver3/index.html
+        line: index on webserver3
+        create: yes
+    - name: selinux
+      sefcontext:
+        target: '/webserver3/(.*)?'
+        setype: httpd_sys_rw_content_t
+        state: present
+    - name: Apply new SELinux file context to filesystem
+      command: restorecon -irv /webserver3
