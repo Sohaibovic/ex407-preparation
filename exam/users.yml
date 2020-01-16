@@ -1,0 +1,23 @@
+- hosts: all
+  become: yes
+  gather_facts: true
+
+  vars_files:
+    - secret.yml
+    - user_list.yml
+
+  tasks:
+    - name: create user on dev and prod
+      user:
+        name: "{{ item.username }}"
+        password: "{{ imadev | password_hash('sha512') }}"
+        groups: wheel
+      when: "item.job == 'developer' and 'dev' in group_names or 'prod' in group_names"
+      loop: '{{ users }}'
+    - name: create user on qa
+      user:
+        name: "{{ item.username }}"
+        password: "{{ imaman | password_hash('sha512') }}"
+        groups: admin
+      when: "item.job == 'manager' and 'qa' in group_names"
+      loop: '{{ users }}'
