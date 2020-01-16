@@ -7,12 +7,19 @@
     - user_list.yml
 
   tasks:
-    - name: create user on dev and prod
+    - name: create user on dev
       user:
         name: "{{ item.username }}"
         password: "{{ imadev | password_hash('sha512') }}"
         groups: wheel
-      when: "item.job == 'developer' and 'dev' in group_names or 'prod' in group_names"
+      when: "item.job == 'developer' and 'dev' in group_names"
+      loop: '{{ users }}'
+    - name: create user on prod
+      user:
+        name: "{{ item.username }}"
+        password: "{{ imadev | password_hash('sha512') }}"
+        groups: wheel
+      when: "item.job == 'developer' and 'prod' in group_names"
       loop: '{{ users }}'
     - name: create user on qa
       user:
