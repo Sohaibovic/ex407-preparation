@@ -46,12 +46,9 @@ ansible all -m ping
 
 # Contoh Soal Exam
 
-<form action="">
-  <input type="radio" name="rdo" id="yes" checked />
-  <input type="radio" name="rdo" id="no"/>
-  <div class="switch">
-    <label for="yes">Yes</label>
-    <label for="no">No</label>
-    <span></span>
-  </div>
-</form>
+### - [ ] [Instruction](https://google.com)
+
+___
+
+### - [ ] [Soal Pertama](https://goo.gl)
+### - [ ] [Soal Kedua](https://ddg.gg)
