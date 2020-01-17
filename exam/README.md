@@ -43,3 +43,15 @@ ansible all -m ping
 12. 10 soal selanjutnya itu akan banyak buat playbook dan roles
 13. tandai option box done jika sudah selesai di tiap pertanyaan
 14. jangan close terminal atau lock / logout komputer jika ingin ditinggal, biarkan seperti itu sampai selesai
+
+# Contoh Soal Exam
+
+<form action="">
+  <input type="radio" name="rdo" id="yes" checked />
+  <input type="radio" name="rdo" id="no"/>
+  <div class="switch">
+    <label for="yes">Yes</label>
+    <label for="no">No</label>
+    <span></span>
+  </div>
+</form>
