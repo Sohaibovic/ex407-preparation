@@ -1,0 +1,8 @@
+- hosts: all
+  become: yes
+  vars:
+    timesync_ntp_servers:
+      - hostname: 172.24.1.1
+        iburst: yes
+  roles:
+    - linux-system-roles.timesync

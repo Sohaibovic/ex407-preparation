@@ -1,0 +1,10 @@
+{% for host in vars['play_hosts'] %}
+
+{{ host }}
+----------
+IP: {{ ansible_eth0.ipv4.address }}
+Interface: {{ ansible_interfaces }}
+Machine ID: {{ ansible_machine_id }}
+Memory: {{ ansible_memtotal_mb }}
+
+{% endfor %}
