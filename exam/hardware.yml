@@ -7,4 +7,4 @@
       template:
         src: templates/hardware.j2
         dest: hardware.txt
-      delegate_to: 127.0.0.1
+      delegate_to: localhost

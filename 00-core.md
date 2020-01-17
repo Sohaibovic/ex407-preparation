@@ -28,3 +28,7 @@ test to localhost
 ```
 ansible-playbook -i localhost, ping.yml
 ```
+
+[Back](https://github.com/widansible/ex407-preparation){: .btn}
+
+[Send feedback](http://www.google.com){: .btn}
