@@ -29,6 +29,6 @@ test to localhost
 ansible-playbook -i localhost, ping.yml
 ```
 
-[Back](https://github.com/widansible/ex407-preparation){: .btn}
+<button name="back" onclick="https://github.com/widansible/ex407-preparation">Back</button>
+<button name="feedback" onclick="https://google.com">Send Feedback</button>
 
-[Send feedback](http://www.google.com){: .btn}
