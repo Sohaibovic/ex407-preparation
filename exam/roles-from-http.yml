@@ -1,0 +1,8 @@
+- src: http://localhost/roles/haproxy.tar
+  name: balancer
+- src: http://localhost/roles/apache-tar.tar
+  name: apache-tar-from-http
+
+# import roles with this command:
+#
+# ansible-galaxy install -r roles-from-http.yml -p roles/

@@ -1,10 +1,17 @@
 - hosts: all
   become: yes
-  gather_facts: true
 
   tasks:
     - name: gather hardware
-      template:
-        src: templates/hardware.j2
-        dest: hardware.txt
-      delegate_to: localhost
+      get_url:
+        url: http://localhost/files/hardware.empty
+        dest: /root/hardware.txt
+      lineinfile:
+        path: /root/hardware.txt
+        line: ansible_fqdn={{ ansible_fqdn }}
+      lineinfile:
+        path: /root/hardware.txt
+        line: ansible_hostname={{ ansible_hostname }}
+      lineinfile:
+        path: /root/hardware.txt
+        line: ansible_devices.sda.size={{ ansible_devices.sda.size }}

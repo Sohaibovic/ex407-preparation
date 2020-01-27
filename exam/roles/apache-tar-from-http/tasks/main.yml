@@ -1,0 +1,33 @@
+---
+- name: install web
+  yum:
+    name: '{{ item }}'
+    state: present
+  loop:
+    - httpd
+    - wget
+    - unzip
+
+- name: start and enabled 
+  service:
+    name: httpd
+    state: started
+    enabled: true
+
+- name: index.html template
+  template:
+    src: index.html.j2
+    dest: /var/www/html/index.html
+
+- name: firewalld enabled and running
+  service:
+    name: firewalld
+    state: started
+    enabled: true
+
+- name: firewalld permits http service
+  firewalld:
+    service: http
+    permanent: true
+    state: enabled
+    immediate: yes
