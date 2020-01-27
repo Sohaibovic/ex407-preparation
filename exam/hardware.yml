@@ -3,15 +3,18 @@
 
   tasks:
     - name: gather hardware
-      get_url:
-        url: http://localhost/files/hardware.empty
+#      get_url:
+#        url: http://localhost/files/hardware.empty
+#        dest: /root/hardware.txt
+      copy:
+        src: hardware.empty
         dest: /root/hardware.txt
-      lineinfile:
+    - lineinfile:
         path: /root/hardware.txt
         line: ansible_fqdn={{ ansible_fqdn }}
-      lineinfile:
+    - lineinfile:
         path: /root/hardware.txt
         line: ansible_hostname={{ ansible_hostname }}
-      lineinfile:
+    - lineinfile:
         path: /root/hardware.txt
         line: ansible_devices.sda.size={{ ansible_devices.sda.size }}
