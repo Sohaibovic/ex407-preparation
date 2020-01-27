@@ -1,0 +1,17 @@
+- name: gather prod facts
+  hosts: prod
+  tasks: [ ]
+
+- name: setup loadbalancer
+  hosts: balancer
+  become: yes
+  vars:
+    mode: http
+    daemonname: myapplb
+    listenport: 80
+    balance: roundrobin
+    iface: '{{ ansible_default_ipv4.interface }}'
+    httpd_port: 80
+
+  roles:
+  - { role: balancer, tags: ['loadbalancer', 'web'], when: "'balancer' in group_names" }

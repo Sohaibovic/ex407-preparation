@@ -1,0 +1,11 @@
+[prod]
+node1 ansible_host=192.168.122.21
+node2 ansible_host=192.168.122.22
+[dev]
+node3 ansible_host=192.168.122.23
+[balancer]
+node4 ansible_host=192.168.122.24
+[qa]
+node5 ansible_host=192.168.122.25
+[webservers:children]
+prod

@@ -1,0 +1,9 @@
+- name: update /etc/issue
+  hosts: all
+  become: yes
+
+  tasks:
+  - name: update with template
+    template:
+      src: templates/issue.j2
+      dest: /etc/issue

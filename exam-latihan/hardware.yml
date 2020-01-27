@@ -1,0 +1,10 @@
+- name: gather hardware
+  hosts: all
+  become: yes
+
+  tasks:
+  - name: gather hardware from template
+    template:
+      src: templates/hardware.j2
+      dest: hardware.txt
+    delegate_to: localhost

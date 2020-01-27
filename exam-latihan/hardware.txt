@@ -1,0 +1,50 @@
+Detail for node5
+---------
+fqdn: node5.192.168.122.25.nip.io
+hostname: node5
+ip: 192.168.122.148
+arc: x86_64
+id: 4f56d0f1520540e194ff41ececbc3ce0
+
+----------
+
+Detail for node4
+---------
+fqdn: node4.192.168.122.24.nip.io
+hostname: node4
+ip: 192.168.122.39
+arc: x86_64
+id: 4f56d0f1520540e194ff41ececbc3ce0
+
+----------
+
+Detail for node3
+---------
+fqdn: node3.192.168.122.23.nip.io
+hostname: node3
+ip: 192.168.122.156
+arc: x86_64
+id: 4f56d0f1520540e194ff41ececbc3ce0
+
+----------
+
+Detail for node1
+---------
+fqdn: node1.192.168.122.21.nip.io
+hostname: node1
+ip: 192.168.122.123
+arc: x86_64
+id: 4f56d0f1520540e194ff41ececbc3ce0
+
+----------
+
+Detail for node2
+---------
+fqdn: node2.192.168.122.22.nip.io
+hostname: node2
+ip: 192.168.122.151
+arc: x86_64
+id: 4f56d0f1520540e194ff41ececbc3ce0
+
+----------
+
