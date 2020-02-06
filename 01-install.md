@@ -8,7 +8,7 @@ yum install python2
 yum install epel-release
 yum install ansible
 ```
-### centos pip
+### centos pip (optional)
 ```
 yum install epel-release
 yum install python2-pip
@@ -85,6 +85,8 @@ dan jalankan dengan
 ```
 ansible-playbook -i localhost, 01-logrotate.yml -c local -u wid
 ```
+Adapun yang keluar di exam adalah, hanya buat inventory seperti yang dijelaskan di https://github.com/widansible/ex407-preparation/blob/master/00-inventory.md dan ansible.cfg di https://github.com/widansible/ex407-preparation/blob/master/00-cfg.md
+
 
 ### Referensi
 * https://releases.ansible.com/ansible/rpm/release/epel-7-x86_64/

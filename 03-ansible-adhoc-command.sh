@@ -11,3 +11,4 @@ ansible centos -i inventory -m ping -u ansible
 ansible centos -i inventory -m lineinfile -a "path=/etc/motd create=yes line='welcome at {{ inventory_hostname }}'" -u ansible -b
 
 
+Yang keluar di exam adalah terkait dengan module yum_repository, kita disuruh membuat repository yum (biasanya terletak di /etc/yum.repos.d/namarepo.

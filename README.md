@@ -9,9 +9,9 @@
 
 ## Objectives
 
-* [Understand core components of Ansible](https://github.com/widansible/ex407-preparation/blob/master/00-core.md)
+* Understand core components of Ansible
 
-  * Inventories
+  * [Inventories](https://github.com/widansible/ex407-preparation/blob/master/00-inventory.md)
   * Modules
   * Variables
   * Facts
@@ -34,8 +34,10 @@
 * [Create simple shell scripts that run ad hoc Ansible commands](https://github.com/widansible/ex407-preparation/blob/master/03-ansible-adhoc-command.sh)
 
 * [Use both static and dynamic inventories to define groups of hosts](https://github.com/widansible/ex407-preparation/blob/master/04-static-dynamic-inventory.md)
+**TIDAK KELUAR DI EXAM**
 
 * [Utilize an existing dynamic inventory script](https://github.com/widansible/ex407-preparation/blob/master/05-utilize-dynamic-inventory-script.md)
+**TIDAK KELUAR DI EXAM**
 
 * [Create Ansible plays and playbooks](https://github.com/widansible/ex407-preparation/blob/master/06-create-playbook.md)
 
